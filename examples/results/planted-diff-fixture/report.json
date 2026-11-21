@@ -1,0 +1,1111 @@
+{
+  "schema_version": 1,
+  "run": {
+    "label": "planted-diff-fixture",
+    "mode": "diff",
+    "runner": "python",
+    "backend": "fake",
+    "model": null,
+    "fixture": true,
+    "docaudit_version": "0.1.0",
+    "docs": {
+      "A": {
+        "source": "examples/planted/cc-by-4.0.txt",
+        "sha256": "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e",
+        "format": "txt",
+        "paragraphs": 79,
+        "sections": 11
+      },
+      "B": {
+        "source": "examples/planted/cc-by-4.0-planted.txt",
+        "sha256": "c6e691013a779cee21fe6abc10ab5a609e3a4902d820ed36ff669398d5da5b18",
+        "format": "txt",
+        "paragraphs": 80,
+        "sections": 12
+      }
+    },
+    "alignment": {
+      "equal": 65,
+      "modified": 12,
+      "inserted": 2,
+      "deleted": 1,
+      "moved": 1
+    },
+    "chunks": 2
+  },
+  "pipeline": {
+    "verification": {
+      "agent_findings": 20,
+      "accepted": 19,
+      "rejected": 1,
+      "rejection_rate": 0.05,
+      "rejection_reasons": {
+        "quote_not_found": 1
+      },
+      "evidence_match_levels": {
+        "exact": 33,
+        "normalized": 1
+      },
+      "evidence_relocated": 1,
+      "sweep_findings": 2
+    },
+    "missed_verification": {
+      "agent_findings": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "rejection_rate": 0.0,
+      "rejection_reasons": {},
+      "evidence_match_levels": {},
+      "evidence_relocated": 0,
+      "sweep_findings": 0
+    },
+    "missed_attached_to_existing": 0,
+    "merged_findings": 17,
+    "coverage_first_pass": {
+      "changed_ops": 16,
+      "covered": 14,
+      "ratio": 0.875,
+      "uncovered": [
+        23,
+        52
+      ]
+    },
+    "coverage": {
+      "changed_ops": 16,
+      "covered": 15,
+      "ratio": 0.9375,
+      "uncovered": [
+        23
+      ]
+    },
+    "skeptic": {
+      "verdicts": 17,
+      "by_verdict": {
+        "refuted": 3,
+        "upheld": 11,
+        "weakened": 3
+      },
+      "by_effective": {
+        "refuted": 2,
+        "upheld": 11,
+        "weakened": 4
+      },
+      "ungrounded_refutations": 1,
+      "unknown_finding_ids": []
+    },
+    "status_counts": {
+      "downgraded": 4,
+      "killed": 2,
+      "upheld": 11
+    },
+    "agent_failures": [],
+    "incomplete": null,
+    "usage": {
+      "calls": 9,
+      "input_tokens": 62005,
+      "output_tokens": 3435,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.0,
+      "caps": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null
+      },
+      "priced": false
+    }
+  },
+  "summary": {
+    "executive_summary": "15 findings survived quote verification and the skeptic stage (11 major, 3 minor, 1 info). The first to read is F012: Cross-reference to a non-existent target: Section 9(a). Its evidence reads \"Section 9(a)\". 2 findings were refuted by skeptics and 0 are low-confidence.",
+    "themes": [
+      {
+        "title": "broken_reference (1)",
+        "finding_ids": [
+          "F012"
+        ]
+      },
+      {
+        "title": "changed (9)",
+        "finding_ids": [
+          "F013",
+          "F014",
+          "F015",
+          "F006",
+          "F011",
+          "F016",
+          "F004",
+          "F002",
+          "F005"
+        ]
+      },
+      {
+        "title": "added (2)",
+        "finding_ids": [
+          "F001",
+          "F010"
+        ]
+      },
+      {
+        "title": "removed (1)",
+        "finding_ids": [
+          "F009"
+        ]
+      },
+      {
+        "title": "moved (1)",
+        "finding_ids": [
+          "F017"
+        ]
+      },
+      {
+        "title": "omission (1)",
+        "finding_ids": [
+          "F008"
+        ]
+      }
+    ],
+    "issues": [],
+    "unverified_quotes": []
+  },
+  "findings": [
+    {
+      "id": "F012",
+      "kind": "broken_reference",
+      "title": "Cross-reference to a non-existent target: Section 9(a)",
+      "description": "The text refers to Section 9(a), but no Section 9 in this document.",
+      "severity": "major",
+      "confidence": 0.925,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0065",
+          "quote": "Section 9(a)",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "sweep"
+      ],
+      "members": 1,
+      "position": [
+        65
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b03-v1",
+          "finding_id": "F012",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.9,
+      "status": "upheld"
+    },
+    {
+      "id": "F013",
+      "kind": "changed",
+      "title": "Value changed in Section 6 -- Term and Termination.: '6(a),' became '9(a),'",
+      "description": "Version A reads \"6(a),\" where version B reads \"9(a),\".",
+      "severity": "major",
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0064",
+          "quote": "has terminated under Section 6(a), it reinstates:",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0065",
+          "quote": "has terminated under Section 9(a), it reinstates:",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "crossref",
+        "reader-c01"
+      ],
+      "members": 2,
+      "position": [
+        65
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b03-v1",
+          "finding_id": "F013",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.88,
+      "status": "upheld"
+    },
+    {
+      "id": "F014",
+      "kind": "changed",
+      "title": "Value changed in Section 6 -- Term and Termination.: '30' became '60'",
+      "description": "Version A reads \"30\" where version B reads \"60\".",
+      "severity": "major",
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0065",
+          "quote": "it is cured within 30 days of Your discovery",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0066",
+          "quote": "it is cured within 60 days of Your discovery",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "crossref",
+        "reader-c01"
+      ],
+      "members": 2,
+      "position": [
+        66
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b03-v1",
+          "finding_id": "F014",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.88,
+      "status": "upheld"
+    },
+    {
+      "id": "F015",
+      "kind": "changed",
+      "title": "Value changed in Section 6 -- Term and Termination.: '6,' became '(nothing)'",
+      "description": "Version A reads \"6,\" where version B reads \"(nothing)\".",
+      "severity": "major",
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0069",
+          "quote": "d. Sections 1, 5, 6, 7, and 8 survive",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0070",
+          "quote": "D. SECTIONS 1, 5, 7, AND 8 SURVIVE TERMINATION",
+          "match": "normalized",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "crossref",
+        "reader-c01"
+      ],
+      "members": 2,
+      "position": [
+        70
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b03-v1",
+          "finding_id": "F015",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.88,
+      "status": "upheld"
+    },
+    {
+      "id": "F001",
+      "kind": "added",
+      "title": "New text in (front matter): EVALUATION FIXTURE. This file is a deliberately modified ...",
+      "description": "Version B contains this paragraph and version A has no counterpart for it.",
+      "severity": "major",
+      "confidence": 0.775,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0001",
+          "quote": "EVALUATION FIXTURE. This file is a deliberately modified copy of the Creative",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        0
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b01-v1",
+          "finding_id": "F001",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.7,
+      "status": "upheld"
+    },
+    {
+      "id": "F006",
+      "kind": "changed",
+      "title": "Wording changed in Section 2 -- Scope.: 'not' became '(nothing)'",
+      "description": "Version A reads \"not\" where version B reads \"(nothing)\".",
+      "severity": "major",
+      "confidence": 0.775,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0031",
+          "quote": "downstream restrictions. You may not offer or impose any",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0032",
+          "quote": "downstream restrictions. You may offer or impose any additional",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        31
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b02-v1",
+          "finding_id": "F006",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.7,
+      "status": "upheld"
+    },
+    {
+      "id": "F009",
+      "kind": "removed",
+      "title": "Text removed from Section 3 -- License Conditions.: 3. If requested by the Licensor, You must ...",
+      "description": "Version A contains this paragraph and version B has no counterpart for it.",
+      "severity": "major",
+      "confidence": 0.775,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0050",
+          "quote": "3. If requested by the Licensor, You must remove any of the",
+          "match": "exact",
+          "relocated": true
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        50
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b02-v1",
+          "finding_id": "F009",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.7,
+      "status": "upheld"
+    },
+    {
+      "id": "F010",
+      "kind": "added",
+      "title": "New text in Section 3 -- License Conditions.: 5. If You Share the Licensed Material for ...",
+      "description": "Version B contains this paragraph and version A has no counterpart for it.",
+      "severity": "major",
+      "confidence": 0.775,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0052",
+          "quote": "5. If You Share the Licensed Material for commercial purposes, You must",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "gap"
+      ],
+      "members": 1,
+      "position": [
+        52
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b02-v1",
+          "finding_id": "F010",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.7,
+      "status": "upheld"
+    },
+    {
+      "id": "F011",
+      "kind": "changed",
+      "title": "Wording changed in Section 4 -- Sui Generis Database Rights.: 'must' became 'should'",
+      "description": "Version A reads \"must\" where version B reads \"should\".",
+      "severity": "major",
+      "confidence": 0.775,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0056",
+          "quote": "c. You must comply with the conditions",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0057",
+          "quote": "c. You should comply with the conditions",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        57
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b03-v1",
+          "finding_id": "F011",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.7,
+      "status": "upheld"
+    },
+    {
+      "id": "F016",
+      "kind": "changed",
+      "title": "Wording changed in Section 7 -- Other Terms and Conditions.: 'The Licensor' became 'You'",
+      "description": "Version A reads \"The Licensor\" where version B reads \"You\". 1 further edit(s) in the same paragraph.",
+      "severity": "major",
+      "confidence": 0.775,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0071",
+          "quote": "a. The Licensor shall not be bound",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0072",
+          "quote": "a. You shall not be bound",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c02"
+      ],
+      "members": 1,
+      "position": [
+        72
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b04-v1",
+          "finding_id": "F016",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.7,
+      "status": "upheld"
+    },
+    {
+      "id": "F004",
+      "kind": "changed",
+      "title": "Cross-check: Value changed in Section 2 -- Scope.: 'specified in Section 6(a).' became 'five years from the date You accept it.'",
+      "description": "Version A reads \"specified in Section 6(a).\" where version B reads \"five years from the date You accept it.\".",
+      "severity": "major",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0027",
+          "quote": "this Public License is specified in Section 6(a).",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0028",
+          "quote": "this Public License is five years from the date You accept it.",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "crossref"
+      ],
+      "members": 1,
+      "position": [
+        27
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b01-v1",
+          "finding_id": "F004",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.6,
+      "status": "upheld"
+    },
+    {
+      "id": "F017",
+      "kind": "moved",
+      "title": "Paragraph moved from Section 8 -- Interpretation. to Section 7 -- Other Terms and Conditions.",
+      "description": "The same provision appears in a different place in version B.",
+      "severity": "minor",
+      "confidence": 0.39,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0077",
+          "quote": "d. Nothing in this Public License constitutes or may be interpreted as",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0074",
+          "quote": "c. Nothing in this Public License constitutes or may be interpreted as",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c02"
+      ],
+      "members": 1,
+      "position": [
+        74
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b04-v1",
+          "finding_id": "F017",
+          "verdict": "weakened",
+          "effective": "weakened",
+          "reason": "Real, but the practical effect is limited.",
+          "suggested_severity": "keep",
+          "counter_evidence": [
+            {
+              "doc": "A",
+              "para_id": "p0077",
+              "quote": "d. Nothing in this Public License constitutes or may be interpreted as",
+              "verified": true
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "original_severity": "minor",
+      "original_confidence": 0.65,
+      "status": "downgraded"
+    },
+    {
+      "id": "F002",
+      "kind": "changed",
+      "title": "Wording changed in Section 1 -- Definitions.: 'translated, altered, arranged, transformed,' became 'translated'",
+      "description": "Version A reads \"translated, altered, arranged, transformed,\" where version B reads \"translated\". 1 further edit(s) in the same paragraph.",
+      "severity": "minor",
+      "confidence": 0.36,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0010",
+          "quote": "the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0011",
+          "quote": "the Licensed Material is translated or altered in a",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        10
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b01-v1",
+          "finding_id": "F002",
+          "verdict": "weakened",
+          "effective": "weakened",
+          "reason": "Real, but the practical effect is limited.",
+          "suggested_severity": "keep",
+          "counter_evidence": [
+            {
+              "doc": "A",
+              "para_id": "p0010",
+              "quote": "the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in",
+              "verified": true
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "original_severity": "minor",
+      "original_confidence": 0.6,
+      "status": "downgraded"
+    },
+    {
+      "id": "F005",
+      "kind": "changed",
+      "title": "Wording changed in Section 2 -- Scope.: 'Licensed' became 'Granted'",
+      "description": "Version A reads \"Licensed\" where version B reads \"Granted\".",
+      "severity": "minor",
+      "confidence": 0.36,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0028",
+          "quote": "You to exercise the Licensed Rights in all media",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0029",
+          "quote": "You to exercise the Granted Rights in all media",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        28
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b01-v1",
+          "finding_id": "F005",
+          "verdict": "weakened",
+          "effective": "weakened",
+          "reason": "Real, but the practical effect is limited.",
+          "suggested_severity": "keep",
+          "counter_evidence": [
+            {
+              "doc": "A",
+              "para_id": "p0028",
+              "quote": "You to exercise the Licensed Rights in all media",
+              "verified": true
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "original_severity": "minor",
+      "original_confidence": 0.6,
+      "status": "downgraded"
+    },
+    {
+      "id": "F008",
+      "kind": "omission",
+      "title": "Numbering gap: item 3 is missing",
+      "description": "Item 4 follows the item before it, but 3 was expected; an item may have been deleted or the list renumbered incompletely.",
+      "severity": "info",
+      "confidence": 0.54,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0050",
+          "quote": "2. You may satisfy the conditions in Section",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0051",
+          "quote": "4. If You Share Adapted Material You produce,",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "crossref",
+        "sweep"
+      ],
+      "members": 2,
+      "position": [
+        49
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b02-v1",
+          "finding_id": "F008",
+          "verdict": "refuted",
+          "effective": "weakened",
+          "reason": "The numbering may be intentional.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": [
+            "ungrounded refutation: no verified counter-evidence, treated as weakened"
+          ]
+        }
+      ],
+      "original_severity": "minor",
+      "original_confidence": 0.9,
+      "status": "downgraded"
+    }
+  ],
+  "low_confidence": [],
+  "killed": [
+    {
+      "id": "F003",
+      "kind": "changed",
+      "title": "Wording changed in Section 1 -- Definitions.: 'communication,' became 'communication'",
+      "description": "Version A reads \"communication,\" where version B reads \"communication\".",
+      "severity": "minor",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0018",
+          "quote": "public performance, distribution, dissemination, communication, or importation, and to",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0019",
+          "quote": "public performance, distribution, dissemination, communication or importation, and to",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        18
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b01-v1",
+          "finding_id": "F003",
+          "verdict": "refuted",
+          "effective": "refuted",
+          "reason": "Only spelling or punctuation differs between the versions; the meaning is unchanged.",
+          "suggested_severity": "info",
+          "counter_evidence": [
+            {
+              "doc": "A",
+              "para_id": "p0018",
+              "quote": "public performance, distribution, dissemination, communication, or importation, and to",
+              "verified": true
+            },
+            {
+              "doc": "B",
+              "para_id": "p0019",
+              "quote": "public performance, distribution, dissemination, communication or importation, and to",
+              "verified": true
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "original_severity": "minor",
+      "original_confidence": 0.6,
+      "status": "killed"
+    },
+    {
+      "id": "F007",
+      "kind": "changed",
+      "title": "Wording changed in Section 2 -- Scope.: 'licensed' became 'licenced'",
+      "description": "Version A reads \"licensed\" where version B reads \"licenced\". 1 further edit(s) in the same paragraph.",
+      "severity": "minor",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0035",
+          "quote": "trademark rights are not licensed under this Public License.",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "B",
+          "para_id": "p0036",
+          "quote": "trademark rights are not licenced under this Public Licence.",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c01"
+      ],
+      "members": 1,
+      "position": [
+        35
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b02-v1",
+          "finding_id": "F007",
+          "verdict": "refuted",
+          "effective": "refuted",
+          "reason": "Only spelling or punctuation differs between the versions; the meaning is unchanged.",
+          "suggested_severity": "info",
+          "counter_evidence": [
+            {
+              "doc": "A",
+              "para_id": "p0035",
+              "quote": "trademark rights are not licensed under this Public License.",
+              "verified": true
+            },
+            {
+              "doc": "B",
+              "para_id": "p0036",
+              "quote": "trademark rights are not licenced under this Public Licence.",
+              "verified": true
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "original_severity": "minor",
+      "original_confidence": 0.6,
+      "status": "killed"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "reader-c01",
+      "kind": "changed",
+      "title": "Wording changed in Section 2 -- Scope.: 'irrevocable' became 'revocable'",
+      "code": "quote_not_found",
+      "reasons": [
+        "B:p0024 quote_not_found (longest common run 38% of quote)"
+      ]
+    }
+  ],
+  "paragraphs": {
+    "A:p0010": {
+      "text": "a. Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.",
+      "section": "Section 1 -- Definitions."
+    },
+    "A:p0018": {
+      "text": "i. Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.",
+      "section": "Section 1 -- Definitions."
+    },
+    "A:p0027": {
+      "text": "3. Term. The term of this Public License is specified in Section 6(a).",
+      "section": "Section 2 -- Scope."
+    },
+    "A:p0028": {
+      "text": "4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a) (4) never produces Adapted Material.",
+      "section": "Section 2 -- Scope."
+    },
+    "A:p0031": {
+      "text": "b. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.",
+      "section": "Section 2 -- Scope."
+    },
+    "A:p0035": {
+      "text": "2. Patent and trademark rights are not licensed under this Public License.",
+      "section": "Section 2 -- Scope."
+    },
+    "A:p0050": {
+      "text": "3. If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.",
+      "section": "Section 3 -- License Conditions."
+    },
+    "A:p0056": {
+      "text": "c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.",
+      "section": "Section 4 -- Sui Generis Database Rights."
+    },
+    "A:p0064": {
+      "text": "b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:",
+      "section": "Section 6 -- Term and Termination."
+    },
+    "A:p0065": {
+      "text": "1. automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or",
+      "section": "Section 6 -- Term and Termination."
+    },
+    "A:p0069": {
+      "text": "d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.",
+      "section": "Section 6 -- Term and Termination."
+    },
+    "A:p0071": {
+      "text": "a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.",
+      "section": "Section 7 -- Other Terms and Conditions."
+    },
+    "A:p0077": {
+      "text": "d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.",
+      "section": "Section 8 -- Interpretation."
+    },
+    "B:p0001": {
+      "text": "EVALUATION FIXTURE. This file is a deliberately modified copy of the Creative Commons Attribution 4.0 International legal code, made to test document comparison tools. It is not a Creative Commons license and must not be used as one. The planted changes are listed in ground_truth.json.",
+      "section": "(front matter)"
+    },
+    "B:p0011": {
+      "text": "a. Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated or altered in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.",
+      "section": "Section 1 -- Definitions."
+    },
+    "B:p0019": {
+      "text": "i. Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.",
+      "section": "Section 1 -- Definitions."
+    },
+    "B:p0028": {
+      "text": "3. Term. The term of this Public License is five years from the date You accept it.",
+      "section": "Section 2 -- Scope."
+    },
+    "B:p0029": {
+      "text": "4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Granted Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a) (4) never produces Adapted Material.",
+      "section": "Section 2 -- Scope."
+    },
+    "B:p0032": {
+      "text": "b. No downstream restrictions. You may offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.",
+      "section": "Section 2 -- Scope."
+    },
+    "B:p0036": {
+      "text": "2. Patent and trademark rights are not licenced under this Public Licence.",
+      "section": "Section 2 -- Scope."
+    },
+    "B:p0050": {
+      "text": "2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.",
+      "section": "Section 3 -- License Conditions."
+    },
+    "B:p0051": {
+      "text": "4. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.",
+      "section": "Section 3 -- License Conditions."
+    },
+    "B:p0052": {
+      "text": "5. If You Share the Licensed Material for commercial purposes, You must notify the Licensor in writing at least 10 days in advance.",
+      "section": "Section 3 -- License Conditions."
+    },
+    "B:p0057": {
+      "text": "c. You should comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.",
+      "section": "Section 4 -- Sui Generis Database Rights."
+    },
+    "B:p0065": {
+      "text": "b. Where Your right to use the Licensed Material has terminated under Section 9(a), it reinstates:",
+      "section": "Section 6 -- Term and Termination."
+    },
+    "B:p0066": {
+      "text": "1. automatically as of the date the violation is cured, provided it is cured within 60 days of Your discovery of the violation; or",
+      "section": "Section 6 -- Term and Termination."
+    },
+    "B:p0070": {
+      "text": "d. Sections 1, 5, 7, and 8 survive termination of this Public License.",
+      "section": "Section 6 -- Term and Termination."
+    },
+    "B:p0072": {
+      "text": "a. You shall not be bound by any additional or different terms or conditions communicated by the Licensor unless expressly agreed.",
+      "section": "Section 7 -- Other Terms and Conditions."
+    },
+    "B:p0074": {
+      "text": "c. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.",
+      "section": "Section 7 -- Other Terms and Conditions."
+    }
+  }
+}

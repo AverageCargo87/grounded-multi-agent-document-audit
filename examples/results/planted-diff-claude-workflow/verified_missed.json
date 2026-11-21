@@ -1,0 +1,499 @@
+{
+  "stats": {
+    "agent_findings": 12,
+    "accepted": 11,
+    "rejected": 1,
+    "rejection_rate": 0.0833,
+    "rejection_reasons": {
+      "kind_not_allowed_in_diff_mode": 1
+    },
+    "evidence_match_levels": {
+      "exact": 23
+    },
+    "evidence_relocated": 0,
+    "sweep_findings": 0
+  },
+  "agent_failures": [],
+  "attached": [
+    {
+      "finding_id": "F008",
+      "source": "skeptic-b01-v1:missed",
+      "title": "Section 2(a)(5)(b): prohibition on downstream restrictions turned into a permission ('may not offer' to 'may offer')"
+    },
+    {
+      "finding_id": "F014",
+      "source": "skeptic-b01-v1:missed",
+      "title": "Section 6(b): reinstatement refers to termination under nonexistent Section 9(a)"
+    },
+    {
+      "finding_id": "F015",
+      "source": "skeptic-b01-v1:missed",
+      "title": "Section 6(b)(1): cure period for automatic reinstatement extended from 30 to 60 days"
+    },
+    {
+      "finding_id": "F016",
+      "source": "skeptic-b01-v1:missed",
+      "title": "Section 6(d): Section 6 removed from the list of sections that survive termination"
+    },
+    {
+      "finding_id": "F011",
+      "source": "skeptic-b02-v1:missed",
+      "title": "Section 3(a)(3) deleted: Licensor can no longer require removal of attribution information"
+    },
+    {
+      "finding_id": "F012",
+      "source": "skeptic-b02-v1:missed",
+      "title": "New Section 3(a)(5): 10-day advance written notice to the Licensor for commercial Sharing"
+    },
+    {
+      "finding_id": "F003",
+      "source": "skeptic-b02-v1:missed",
+      "title": "Section 2(a)(1): license grant changed from irrevocable to revocable"
+    },
+    {
+      "finding_id": "F004",
+      "source": "skeptic-b02-v1:missed",
+      "title": "Section 2(a)(3): term changed to five years, conflicting with Section 6(a)"
+    },
+    {
+      "finding_id": "F016",
+      "source": "skeptic-b03-v1:missed",
+      "title": "Section 6(d): Section 6 dropped from the list of provisions that survive termination"
+    },
+    {
+      "finding_id": "F005",
+      "source": "skeptic-b03-v1:missed",
+      "title": "Term conflict: Section 2(a)(3) five-year term vs Section 6(a) term of the licensed rights in B"
+    },
+    {
+      "finding_id": "F010",
+      "source": "skeptic-b03-v1:missed",
+      "title": "Section 3(a) numbering gap in B: item 3 missing (2, 4, 5)"
+    }
+  ],
+  "findings": [],
+  "verification": [
+    {
+      "source": "skeptic-b01-v1:missed",
+      "kind": "changed",
+      "title": "Section 2(a)(5)(b): prohibition on downstream restrictions turned into a permission ('may not offer' to 'may offer')",
+      "description": "Under the heading 'No downstream restrictions', A says You may not offer or impose extra terms or apply Effective Technological Measures if doing so restricts recipients' exercise of the Licensed Rights. B drops 'not', so it now permits exactly those restrictions. This reverses a prohibition into a grant, and it contradicts the heading of the same paragraph. No finding in the batch covers it.",
+      "severity": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0031",
+          "quote": "No downstream restrictions. You may not offer or impose any additional or different terms or conditions on",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0031",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0032",
+          "quote": "No downstream restrictions. You may offer or impose any additional or different terms or conditions on",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0032",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b01-v1:missed",
+      "kind": "undefined_term",
+      "title": "Section 2(a)(4): 'Licensed Rights' replaced by undefined term 'Granted Rights'",
+      "description": "In A, Section 2(a)(4) authorizes You to exercise the Licensed Rights, which Section 1(g) defines, in all media and formats. B says 'Granted Rights' instead, and Section 1 of B does not define that term. The scope of the media-and-formats authorization therefore no longer ties to a defined term. Readers will probably read it as Licensed Rights, so the practical effect is limited.",
+      "severity": "minor",
+      "confidence": 0.0,
+      "evidence": [],
+      "status": "rejected",
+      "reasons": [
+        "kind_not_allowed_in_diff_mode: undefined_term"
+      ],
+      "notes": [],
+      "code": "kind_not_allowed_in_diff_mode"
+    },
+    {
+      "source": "skeptic-b01-v1:missed",
+      "kind": "broken_reference",
+      "title": "Section 6(b): reinstatement refers to termination under nonexistent Section 9(a)",
+      "description": "In A, Section 6(b) applies where rights terminated under Section 6(a), which is the automatic-termination clause. B changes the reference to Section 9(a), but B ends at Section 8 and has no Section 9. The reinstatement mechanism no longer clearly attaches to the termination it is meant to cure.",
+      "severity": "major",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0064",
+          "quote": "Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0064",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0065",
+          "quote": "Where Your right to use the Licensed Material has terminated under Section 9(a), it reinstates:",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0065",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b01-v1:missed",
+      "kind": "changed",
+      "title": "Section 6(b)(1): cure period for automatic reinstatement extended from 30 to 60 days",
+      "description": "A reinstates rights automatically only if the violation is cured within 30 days of Your discovery of it. B allows 60 days. This changes a duration that decides whether termination is reversed without the Licensor's involvement.",
+      "severity": "major",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0065",
+          "quote": "provided it is cured within 30 days of Your discovery of the violation",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0065",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0066",
+          "quote": "provided it is cured within 60 days of Your discovery of the violation",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0066",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b01-v1:missed",
+      "kind": "changed",
+      "title": "Section 6(d): Section 6 removed from the list of sections that survive termination",
+      "description": "In A, Sections 1, 5, 6, 7 and 8 survive termination. B omits Section 6. Section 6(b), the reinstatement mechanism, and Section 6(c) both operate after termination, so if Section 6 does not survive, it is unclear whether reinstatement remains available.",
+      "severity": "major",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0069",
+          "quote": "d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0069",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0070",
+          "quote": "d. Sections 1, 5, 7, and 8 survive termination of this Public License.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0070",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b02-v1:missed",
+      "kind": "removed",
+      "title": "Section 3(a)(3) deleted: Licensor can no longer require removal of attribution information",
+      "description": "In A, Section 3(a)(3) required You, on the Licensor's request, to remove information required by Section 3(a)(1)(A) to the extent reasonably practicable. B has no such provision, and Section 3(a) jumps from item 2 to item 4. Licensors lose the right to have their names or attribution removed from uses they object to, and licensees lose that obligation. F010 reports only the numbering gap, not this substantive removal.",
+      "severity": "major",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0050",
+          "quote": "3. If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0050",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b02-v1:missed",
+      "kind": "added",
+      "title": "New Section 3(a)(5): 10-day advance written notice to the Licensor for commercial Sharing",
+      "description": "B adds a new license condition that A does not have: anyone Sharing the Licensed Material for commercial purposes must notify the Licensor in writing at least 10 days in advance. Because Section 3 makes all exercise of the Licensed Rights subject to its conditions, and Section 6(a) terminates rights automatically on non-compliance, this new duty limits commercial reuse. It also introduces 'commercial purposes', a term that B does not define.",
+      "severity": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0052",
+          "quote": "5. If You Share the Licensed Material for commercial purposes, You must notify the Licensor in writing at least 10 days in advance.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0052",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b02-v1:missed",
+      "kind": "changed",
+      "title": "Section 2(a)(1): license grant changed from irrevocable to revocable",
+      "description": "A grants an irrevocable license; B grants a revocable one. This changes the basic character of the grant, since the Licensor could now withdraw it. It also conflicts with B's own considerations text, which still says the licenses are irrevocable.",
+      "severity": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0023",
+          "quote": "non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0023",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0024",
+          "quote": "non-sublicensable, non-exclusive, revocable license to exercise the Licensed Rights",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0024",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0006",
+          "quote": "Our licenses are irrevocable.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0006",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b02-v1:missed",
+      "kind": "changed",
+      "title": "Section 2(a)(3): term changed to five years, conflicting with Section 6(a)",
+      "description": "In A, Section 2(a)(3) defers to Section 6(a), under which the license lasts for the term of the Copyright and Similar Rights. In B, Section 2(a)(3) sets a fixed term of five years from acceptance, but Section 6(a) of B still says the license runs for the term of the rights. The duration of the license is therefore changed, and B now states two different terms.",
+      "severity": "major",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0027",
+          "quote": "3. Term. The term of this Public License is specified in Section 6(a).",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0027",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0028",
+          "quote": "3. Term. The term of this Public License is five years from the date You accept it.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0028",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0064",
+          "quote": "This Public License applies for the term of the Copyright and Similar Rights licensed here.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0064",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b03-v1:missed",
+      "kind": "changed",
+      "title": "Section 6(d): Section 6 dropped from the list of provisions that survive termination",
+      "description": "Version A lists Sections 1, 5, 6, 7 and 8 as surviving termination; version B lists only Sections 1, 5, 7 and 8. Without survival, Section 6 itself (the reinstatement mechanism in 6(b), the preservation of the Licensor's remedies, and 6(c)) arguably stops applying once the license terminates, which is exactly when 6(b) is needed. F014 quotes this paragraph as evidence, but no finding in the batch describes or assesses this change.",
+      "severity": "major",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0069",
+          "quote": "d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0069",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0070",
+          "quote": "d. Sections 1, 5, 7, and 8 survive termination of this Public License.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0070",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b03-v1:missed",
+      "kind": "contradiction",
+      "title": "Term conflict: Section 2(a)(3) five-year term vs Section 6(a) term of the licensed rights in B",
+      "description": "In version A, Section 2(a)(3) defers to Section 6(a) for the term. In version B, Section 2(a)(3) states a fixed five-year term from acceptance, while Section 6(a) still says the license applies for the term of the Copyright and Similar Rights licensed. A reader cannot tell which term governs, and this also feeds into the termination and reinstatement scheme in Section 6.",
+      "severity": "major",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0027",
+          "quote": "3. Term. The term of this Public License is specified in Section 6(a).",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0027",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0028",
+          "quote": "3. Term. The term of this Public License is five years from the date You accept it.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0028",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0064",
+          "quote": "This Public License applies for the term of the Copyright and Similar Rights licensed here.",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0064",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    },
+    {
+      "source": "skeptic-b03-v1:missed",
+      "kind": "omission",
+      "title": "Section 3(a) numbering gap in B: item 3 missing (2, 4, 5)",
+      "description": "After the deletion of A's Section 3(a)(3), version B did not renumber the remaining items, so Section 3(a) goes from item 2 to item 4 and then to the new item 5. The gap is a visible internal inconsistency. It makes citations to 'Section 3(a)(4)' and 'Section 3(a)(5)' fragile, since a reader may assume an item 3 exists or was meant to be renumbered.",
+      "severity": "minor",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0050",
+          "quote": "2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0050",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        },
+        {
+          "doc": "B",
+          "para_id": "p0051",
+          "quote": "4. If You Share Adapted Material You produce",
+          "ok": true,
+          "match": "exact",
+          "found_para": "p0051",
+          "relocated": false,
+          "reason": "",
+          "common": 0.0
+        }
+      ],
+      "status": "accepted",
+      "reasons": [],
+      "notes": [],
+      "code": ""
+    }
+  ]
+}

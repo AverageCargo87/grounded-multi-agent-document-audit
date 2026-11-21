@@ -1,0 +1,657 @@
+{
+  "ops": [
+    {
+      "index": 0,
+      "op": "inserted",
+      "a": null,
+      "b": "p0001",
+      "sim": 0.0
+    },
+    {
+      "index": 1,
+      "op": "equal",
+      "a": "p0001",
+      "b": "p0002",
+      "sim": 1.0
+    },
+    {
+      "index": 2,
+      "op": "equal",
+      "a": "p0002",
+      "b": "p0003",
+      "sim": 1.0
+    },
+    {
+      "index": 3,
+      "op": "equal",
+      "a": "p0003",
+      "b": "p0004",
+      "sim": 1.0
+    },
+    {
+      "index": 4,
+      "op": "equal",
+      "a": "p0004",
+      "b": "p0005",
+      "sim": 1.0
+    },
+    {
+      "index": 5,
+      "op": "equal",
+      "a": "p0005",
+      "b": "p0006",
+      "sim": 1.0
+    },
+    {
+      "index": 6,
+      "op": "equal",
+      "a": "p0006",
+      "b": "p0007",
+      "sim": 1.0
+    },
+    {
+      "index": 7,
+      "op": "equal",
+      "a": "p0007",
+      "b": "p0008",
+      "sim": 1.0
+    },
+    {
+      "index": 8,
+      "op": "equal",
+      "a": "p0008",
+      "b": "p0009",
+      "sim": 1.0
+    },
+    {
+      "index": 9,
+      "op": "equal",
+      "a": "p0009",
+      "b": "p0010",
+      "sim": 1.0
+    },
+    {
+      "index": 10,
+      "op": "modified",
+      "a": "p0010",
+      "b": "p0011",
+      "sim": 0.964
+    },
+    {
+      "index": 11,
+      "op": "equal",
+      "a": "p0011",
+      "b": "p0012",
+      "sim": 1.0
+    },
+    {
+      "index": 12,
+      "op": "equal",
+      "a": "p0012",
+      "b": "p0013",
+      "sim": 1.0
+    },
+    {
+      "index": 13,
+      "op": "equal",
+      "a": "p0013",
+      "b": "p0014",
+      "sim": 1.0
+    },
+    {
+      "index": 14,
+      "op": "equal",
+      "a": "p0014",
+      "b": "p0015",
+      "sim": 1.0
+    },
+    {
+      "index": 15,
+      "op": "equal",
+      "a": "p0015",
+      "b": "p0016",
+      "sim": 1.0
+    },
+    {
+      "index": 16,
+      "op": "equal",
+      "a": "p0016",
+      "b": "p0017",
+      "sim": 1.0
+    },
+    {
+      "index": 17,
+      "op": "equal",
+      "a": "p0017",
+      "b": "p0018",
+      "sim": 1.0
+    },
+    {
+      "index": 18,
+      "op": "modified",
+      "a": "p0018",
+      "b": "p0019",
+      "sim": 0.999
+    },
+    {
+      "index": 19,
+      "op": "equal",
+      "a": "p0019",
+      "b": "p0020",
+      "sim": 1.0
+    },
+    {
+      "index": 20,
+      "op": "equal",
+      "a": "p0020",
+      "b": "p0021",
+      "sim": 1.0
+    },
+    {
+      "index": 21,
+      "op": "equal",
+      "a": "p0021",
+      "b": "p0022",
+      "sim": 1.0
+    },
+    {
+      "index": 22,
+      "op": "equal",
+      "a": "p0022",
+      "b": "p0023",
+      "sim": 1.0
+    },
+    {
+      "index": 23,
+      "op": "modified",
+      "a": "p0023",
+      "b": "p0024",
+      "sim": 0.97
+    },
+    {
+      "index": 24,
+      "op": "equal",
+      "a": "p0024",
+      "b": "p0025",
+      "sim": 1.0
+    },
+    {
+      "index": 25,
+      "op": "equal",
+      "a": "p0025",
+      "b": "p0026",
+      "sim": 1.0
+    },
+    {
+      "index": 26,
+      "op": "equal",
+      "a": "p0026",
+      "b": "p0027",
+      "sim": 1.0
+    },
+    {
+      "index": 27,
+      "op": "modified",
+      "a": "p0027",
+      "b": "p0028",
+      "sim": 0.581
+    },
+    {
+      "index": 28,
+      "op": "modified",
+      "a": "p0028",
+      "b": "p0029",
+      "sim": 0.989
+    },
+    {
+      "index": 29,
+      "op": "equal",
+      "a": "p0029",
+      "b": "p0030",
+      "sim": 1.0
+    },
+    {
+      "index": 30,
+      "op": "equal",
+      "a": "p0030",
+      "b": "p0031",
+      "sim": 1.0
+    },
+    {
+      "index": 31,
+      "op": "modified",
+      "a": "p0031",
+      "b": "p0032",
+      "sim": 0.989
+    },
+    {
+      "index": 32,
+      "op": "equal",
+      "a": "p0032",
+      "b": "p0033",
+      "sim": 1.0
+    },
+    {
+      "index": 33,
+      "op": "equal",
+      "a": "p0033",
+      "b": "p0034",
+      "sim": 1.0
+    },
+    {
+      "index": 34,
+      "op": "equal",
+      "a": "p0034",
+      "b": "p0035",
+      "sim": 1.0
+    },
+    {
+      "index": 35,
+      "op": "modified",
+      "a": "p0035",
+      "b": "p0036",
+      "sim": 0.833
+    },
+    {
+      "index": 36,
+      "op": "equal",
+      "a": "p0036",
+      "b": "p0037",
+      "sim": 1.0
+    },
+    {
+      "index": 37,
+      "op": "equal",
+      "a": "p0037",
+      "b": "p0038",
+      "sim": 1.0
+    },
+    {
+      "index": 38,
+      "op": "equal",
+      "a": "p0038",
+      "b": "p0039",
+      "sim": 1.0
+    },
+    {
+      "index": 39,
+      "op": "equal",
+      "a": "p0039",
+      "b": "p0040",
+      "sim": 1.0
+    },
+    {
+      "index": 40,
+      "op": "equal",
+      "a": "p0040",
+      "b": "p0041",
+      "sim": 1.0
+    },
+    {
+      "index": 41,
+      "op": "equal",
+      "a": "p0041",
+      "b": "p0042",
+      "sim": 1.0
+    },
+    {
+      "index": 42,
+      "op": "equal",
+      "a": "p0042",
+      "b": "p0043",
+      "sim": 1.0
+    },
+    {
+      "index": 43,
+      "op": "equal",
+      "a": "p0043",
+      "b": "p0044",
+      "sim": 1.0
+    },
+    {
+      "index": 44,
+      "op": "equal",
+      "a": "p0044",
+      "b": "p0045",
+      "sim": 1.0
+    },
+    {
+      "index": 45,
+      "op": "equal",
+      "a": "p0045",
+      "b": "p0046",
+      "sim": 1.0
+    },
+    {
+      "index": 46,
+      "op": "equal",
+      "a": "p0046",
+      "b": "p0047",
+      "sim": 1.0
+    },
+    {
+      "index": 47,
+      "op": "equal",
+      "a": "p0047",
+      "b": "p0048",
+      "sim": 1.0
+    },
+    {
+      "index": 48,
+      "op": "equal",
+      "a": "p0048",
+      "b": "p0049",
+      "sim": 1.0
+    },
+    {
+      "index": 49,
+      "op": "equal",
+      "a": "p0049",
+      "b": "p0050",
+      "sim": 1.0
+    },
+    {
+      "index": 50,
+      "op": "deleted",
+      "a": "p0050",
+      "b": null,
+      "sim": 0.0
+    },
+    {
+      "index": 51,
+      "op": "equal",
+      "a": "p0051",
+      "b": "p0051",
+      "sim": 1.0
+    },
+    {
+      "index": 52,
+      "op": "inserted",
+      "a": null,
+      "b": "p0052",
+      "sim": 0.0
+    },
+    {
+      "index": 53,
+      "op": "equal",
+      "a": "p0052",
+      "b": "p0053",
+      "sim": 1.0
+    },
+    {
+      "index": 54,
+      "op": "equal",
+      "a": "p0053",
+      "b": "p0054",
+      "sim": 1.0
+    },
+    {
+      "index": 55,
+      "op": "equal",
+      "a": "p0054",
+      "b": "p0055",
+      "sim": 1.0
+    },
+    {
+      "index": 56,
+      "op": "equal",
+      "a": "p0055",
+      "b": "p0056",
+      "sim": 1.0
+    },
+    {
+      "index": 57,
+      "op": "modified",
+      "a": "p0056",
+      "b": "p0057",
+      "sim": 0.96
+    },
+    {
+      "index": 58,
+      "op": "equal",
+      "a": "p0057",
+      "b": "p0058",
+      "sim": 1.0
+    },
+    {
+      "index": 59,
+      "op": "equal",
+      "a": "p0058",
+      "b": "p0059",
+      "sim": 1.0
+    },
+    {
+      "index": 60,
+      "op": "equal",
+      "a": "p0059",
+      "b": "p0060",
+      "sim": 1.0
+    },
+    {
+      "index": 61,
+      "op": "equal",
+      "a": "p0060",
+      "b": "p0061",
+      "sim": 1.0
+    },
+    {
+      "index": 62,
+      "op": "equal",
+      "a": "p0061",
+      "b": "p0062",
+      "sim": 1.0
+    },
+    {
+      "index": 63,
+      "op": "equal",
+      "a": "p0062",
+      "b": "p0063",
+      "sim": 1.0
+    },
+    {
+      "index": 64,
+      "op": "equal",
+      "a": "p0063",
+      "b": "p0064",
+      "sim": 1.0
+    },
+    {
+      "index": 65,
+      "op": "modified",
+      "a": "p0064",
+      "b": "p0065",
+      "sim": 0.941
+    },
+    {
+      "index": 66,
+      "op": "modified",
+      "a": "p0065",
+      "b": "p0066",
+      "sim": 0.958
+    },
+    {
+      "index": 67,
+      "op": "equal",
+      "a": "p0066",
+      "b": "p0067",
+      "sim": 1.0
+    },
+    {
+      "index": 68,
+      "op": "equal",
+      "a": "p0067",
+      "b": "p0068",
+      "sim": 1.0
+    },
+    {
+      "index": 69,
+      "op": "equal",
+      "a": "p0068",
+      "b": "p0069",
+      "sim": 1.0
+    },
+    {
+      "index": 70,
+      "op": "modified",
+      "a": "p0069",
+      "b": "p0070",
+      "sim": 0.963
+    },
+    {
+      "index": 71,
+      "op": "equal",
+      "a": "p0070",
+      "b": "p0071",
+      "sim": 1.0
+    },
+    {
+      "index": 72,
+      "op": "modified",
+      "a": "p0071",
+      "b": "p0072",
+      "sim": 0.857
+    },
+    {
+      "index": 73,
+      "op": "equal",
+      "a": "p0072",
+      "b": "p0073",
+      "sim": 1.0
+    },
+    {
+      "index": 74,
+      "op": "moved",
+      "a": "p0077",
+      "b": "p0074",
+      "sim": 0.974
+    },
+    {
+      "index": 75,
+      "op": "equal",
+      "a": "p0073",
+      "b": "p0075",
+      "sim": 1.0
+    },
+    {
+      "index": 76,
+      "op": "equal",
+      "a": "p0074",
+      "b": "p0076",
+      "sim": 1.0
+    },
+    {
+      "index": 77,
+      "op": "equal",
+      "a": "p0075",
+      "b": "p0077",
+      "sim": 1.0
+    },
+    {
+      "index": 78,
+      "op": "equal",
+      "a": "p0076",
+      "b": "p0078",
+      "sim": 1.0
+    },
+    {
+      "index": 79,
+      "op": "equal",
+      "a": "p0078",
+      "b": "p0079",
+      "sim": 1.0
+    },
+    {
+      "index": 80,
+      "op": "equal",
+      "a": "p0079",
+      "b": "p0080",
+      "sim": 1.0
+    }
+  ],
+  "section_pairs": [
+    {
+      "a": "s01",
+      "b": "s01",
+      "a_title": "Attribution 4.0 International",
+      "b_title": "Attribution 4.0 International",
+      "shared": 2
+    },
+    {
+      "a": "s02",
+      "b": "s02",
+      "a_title": "Using Creative Commons Public Licenses",
+      "b_title": "Using Creative Commons Public Licenses",
+      "shared": 4
+    },
+    {
+      "a": "s03",
+      "b": "s03",
+      "a_title": "Creative Commons Attribution 4.0 International Public License",
+      "b_title": "Creative Commons Attribution 4.0 International Public License",
+      "shared": 2
+    },
+    {
+      "a": "s04",
+      "b": "s04",
+      "a_title": "Section 1 -- Definitions.",
+      "b_title": "Section 1 -- Definitions.",
+      "shared": 12
+    },
+    {
+      "a": "s05",
+      "b": "s05",
+      "a_title": "Section 2 -- Scope.",
+      "b_title": "Section 2 -- Scope.",
+      "shared": 16
+    },
+    {
+      "a": "s06",
+      "b": "s06",
+      "a_title": "Section 3 -- License Conditions.",
+      "b_title": "Section 3 -- License Conditions.",
+      "shared": 14
+    },
+    {
+      "a": "s07",
+      "b": "s07",
+      "a_title": "Section 4 -- Sui Generis Database Rights.",
+      "b_title": "Section 4 -- Sui Generis Database Rights.",
+      "shared": 6
+    },
+    {
+      "a": "s08",
+      "b": "s08",
+      "a_title": "Section 5 -- Disclaimer of Warranties and Limitation of Liability.",
+      "b_title": "Section 5 -- Disclaimer of Warranties and Limitation of Liability.",
+      "shared": 4
+    },
+    {
+      "a": "s09",
+      "b": "s09",
+      "a_title": "Section 6 -- Term and Termination.",
+      "b_title": "Section 6 -- Term and Termination.",
+      "shared": 8
+    },
+    {
+      "a": "s10",
+      "b": "s10",
+      "a_title": "Section 7 -- Other Terms and Conditions.",
+      "b_title": "Section 7 -- Other Terms and Conditions.",
+      "shared": 3
+    },
+    {
+      "a": "s11",
+      "b": "s11",
+      "a_title": "Section 8 -- Interpretation.",
+      "b_title": "Section 8 -- Interpretation.",
+      "shared": 6
+    }
+  ],
+  "stats": {
+    "equal": 65,
+    "modified": 12,
+    "inserted": 2,
+    "deleted": 1,
+    "moved": 1
+  }
+}

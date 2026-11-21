@@ -1,0 +1,153 @@
+{
+  "verdicts": [
+    {
+      "finding_id": "F001",
+      "verdict": "weakened",
+      "reason": "The grant in B p0024 is indeed revocable while B p0006 still says the licenses are irrevocable, so an inconsistency exists. It is overstated, though. The 'Our licenses are irrevocable' sentence sits in the introductory considerations, which B p0005 says are informational only and do not form part of the license, so it does not bind against the operative grant. Section 6(c) does not conflict with revocability either: it covers the Licensor offering separate terms or stopping distribution, which is a different act from revoking the grant. The substantive change (irrevocable to revocable) is already reported as critical in F003. What is left is an inconsistency between the operative text and the non-binding preface, which is major, not critical.",
+      "suggested_severity": "major",
+      "counter_evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0005",
+          "quote": "The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses."
+        },
+        {
+          "doc": "B",
+          "para_id": "p0069",
+          "quote": "offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License."
+        }
+      ]
+    },
+    {
+      "finding_id": "F002",
+      "verdict": "upheld",
+      "reason": "A p0010 lists 'translated, altered, arranged, transformed, or otherwise modified' and B p0011 keeps only 'translated or altered'. I searched B for 'arranged', 'transformed' and 'otherwise modified' and none of them appears elsewhere as a definition of Adapted Material. One could argue that 'altered' is broad enough to cover arrangements, but the catch-all 'otherwise modified' is gone, so the definition is narrower. The change affects Section 2(a)(1)(b) and Section 3(a)(4), which both depend on the defined term. I could not refute it.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    },
+    {
+      "finding_id": "F003",
+      "verdict": "upheld",
+      "reason": "A p0023 grants an 'irrevocable' license and B p0024 grants a 'revocable' one, with the rest of the sentence unchanged. No other paragraph of B restores irrevocability in the operative text; the only remaining 'irrevocable' is in the non-binding preface. This changes whether the Licensor can withdraw the grant, so it is critical. I could not refute it.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    },
+    {
+      "finding_id": "F004",
+      "verdict": "weakened",
+      "reason": "The core change is real: A p0027 points to Section 6(a), and B p0028 fixes the term at five years from acceptance. One supporting claim is partly wrong, though. The finding says the acceptance date 'is not otherwise defined', but B p0009 says that You accept the license by exercising the Licensed Rights. So acceptance has a defined trigger (first exercise), even though no explicit date is given. Severity stays major. Only the secondary claim is overstated.",
+      "suggested_severity": "keep",
+      "counter_evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0009",
+          "quote": "By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License"
+        }
+      ]
+    },
+    {
+      "finding_id": "F005",
+      "verdict": "upheld",
+      "reason": "B p0028 fixes the term at five years from acceptance, while B p0064 (identical to A p0063) still says the license applies for the term of the Copyright and Similar Rights. One could read 2(a)(3) as a specific rule that overrides 6(a), but the text gives no priority rule, and the A cross-reference that tied the two together is gone. B states two incompatible durations. I could not refute it.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    }
+  ],
+  "missed": [
+    {
+      "kind": "changed",
+      "title": "Section 2(a)(5)(b): prohibition on downstream restrictions turned into a permission ('may not offer' to 'may offer')",
+      "description": "Under the heading 'No downstream restrictions', A says You may not offer or impose extra terms or apply Effective Technological Measures if doing so restricts recipients' exercise of the Licensed Rights. B drops 'not', so it now permits exactly those restrictions. This reverses a prohibition into a grant, and it contradicts the heading of the same paragraph. No finding in the batch covers it.",
+      "severity": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0031",
+          "quote": "No downstream restrictions. You may not offer or impose any additional or different terms or conditions on"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0032",
+          "quote": "No downstream restrictions. You may offer or impose any additional or different terms or conditions on"
+        }
+      ]
+    },
+    {
+      "kind": "undefined_term",
+      "title": "Section 2(a)(4): 'Licensed Rights' replaced by undefined term 'Granted Rights'",
+      "description": "In A, Section 2(a)(4) authorizes You to exercise the Licensed Rights, which Section 1(g) defines, in all media and formats. B says 'Granted Rights' instead, and Section 1 of B does not define that term. The scope of the media-and-formats authorization therefore no longer ties to a defined term. Readers will probably read it as Licensed Rights, so the practical effect is limited.",
+      "severity": "minor",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0028",
+          "quote": "The Licensor authorizes You to exercise the Licensed Rights in all media and formats"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0029",
+          "quote": "The Licensor authorizes You to exercise the Granted Rights in all media and formats"
+        }
+      ]
+    },
+    {
+      "kind": "broken_reference",
+      "title": "Section 6(b): reinstatement refers to termination under nonexistent Section 9(a)",
+      "description": "In A, Section 6(b) applies where rights terminated under Section 6(a), which is the automatic-termination clause. B changes the reference to Section 9(a), but B ends at Section 8 and has no Section 9. The reinstatement mechanism no longer clearly attaches to the termination it is meant to cure.",
+      "severity": "major",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0064",
+          "quote": "Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0065",
+          "quote": "Where Your right to use the Licensed Material has terminated under Section 9(a), it reinstates:"
+        }
+      ]
+    },
+    {
+      "kind": "changed",
+      "title": "Section 6(b)(1): cure period for automatic reinstatement extended from 30 to 60 days",
+      "description": "A reinstates rights automatically only if the violation is cured within 30 days of Your discovery of it. B allows 60 days. This changes a duration that decides whether termination is reversed without the Licensor's involvement.",
+      "severity": "major",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0065",
+          "quote": "provided it is cured within 30 days of Your discovery of the violation"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0066",
+          "quote": "provided it is cured within 60 days of Your discovery of the violation"
+        }
+      ]
+    },
+    {
+      "kind": "changed",
+      "title": "Section 6(d): Section 6 removed from the list of sections that survive termination",
+      "description": "In A, Sections 1, 5, 6, 7 and 8 survive termination. B omits Section 6. Section 6(b), the reinstatement mechanism, and Section 6(c) both operate after termination, so if Section 6 does not survive, it is unclear whether reinstatement remains available.",
+      "severity": "major",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0069",
+          "quote": "d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License."
+        },
+        {
+          "doc": "B",
+          "para_id": "p0070",
+          "quote": "d. Sections 1, 5, 7, and 8 survive termination of this Public License."
+        }
+      ]
+    }
+  ]
+}

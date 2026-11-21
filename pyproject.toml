@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docaudit"
+version = "0.1.0"
+description = "Quote-verified multi-agent document audit and diff: agents propose, code verifies every quote, skeptics get the last word."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Grigorii Kim" }]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+anthropic = ["anthropic"]
+pdf = ["pymupdf"]
+dev = ["pytest", "jsonschema"]
+
+[project.scripts]
+docaudit = "docaudit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["docaudit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore:Core Pydantic V1 functionality:UserWarning"]

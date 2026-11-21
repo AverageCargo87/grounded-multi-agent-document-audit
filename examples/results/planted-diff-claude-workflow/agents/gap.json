@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "kind": "changed",
+      "title": "Section 2(a)(4): grant now refers to undefined \"Granted Rights\" instead of the defined \"Licensed Rights\"",
+      "description": "In A, Section 2(a)(4) authorizes You to exercise the Licensed Rights, a term defined in Section 1, in all media and formats. In B the same sentence says Granted Rights, a term that B defines nowhere, while the next sentence of the same paragraph still says Licensed Rights. The scope of the media-and-formats authorization is therefore unclear in B, and the paragraph is internally inconsistent.",
+      "severity": "major",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0028",
+          "quote": "The Licensor authorizes You to exercise the Licensed Rights in all media and formats"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0029",
+          "quote": "The Licensor authorizes You to exercise the Granted Rights in all media and formats"
+        }
+      ]
+    }
+  ],
+  "coverage_note": "Checked all 4 uncovered operations listed in gaps.md. Op 28 (A:p0028 -> B:p0029) is substantive and reported: 'Licensed Rights' was replaced by the undefined term 'Granted Rights' in the Section 2(a)(4) grant; I searched B and 'Granted Rights' occurs nowhere else, so it is not defined elsewhere under different wording. (Earlier findings on this change were rejected only because they used kind undefined_term, which diff mode does not allow; this one uses kind changed.) Judged editorial: Op 0 (B:p0001) is the evaluation-fixture banner added as front matter; it is metadata about the test file, not a provision of the license text, so it changes no obligation, permission or definition of the license itself. Op 18 (A:p0018 -> B:p0019) only removes the serial comma before 'or importation' in the definition of Share; the list of acts and the meaning are unchanged. Op 35 (A:p0035 -> B:p0036) only changes spelling from American to British ('licensed' -> 'licenced', 'License' -> 'Licence'); the provision that patent and trademark rights are not licensed is unchanged in meaning, so this is a spelling variant."
+}

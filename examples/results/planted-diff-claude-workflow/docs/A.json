@@ -1,0 +1,1035 @@
+{
+  "key": "A",
+  "source": "examples/planted/cc-by-4.0.txt",
+  "sha256": "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e",
+  "format": "txt",
+  "paragraphs": [
+    {
+      "id": "p0001",
+      "index": 0,
+      "text": "Attribution 4.0 International",
+      "kind": "heading",
+      "section": "s01",
+      "label": null,
+      "indent": 0,
+      "line": 1,
+      "fingerprint": "a851032f5af4"
+    },
+    {
+      "id": "p0002",
+      "index": 1,
+      "text": "Creative Commons Corporation (\"Creative Commons\") is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an \"as-is\" basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.",
+      "kind": "para",
+      "section": "s01",
+      "label": null,
+      "indent": 0,
+      "line": 5,
+      "fingerprint": "4c5f27fda68b"
+    },
+    {
+      "id": "p0003",
+      "index": 2,
+      "text": "Using Creative Commons Public Licenses",
+      "kind": "heading",
+      "section": "s02",
+      "label": null,
+      "indent": 0,
+      "line": 15,
+      "fingerprint": "b6762542d28b"
+    },
+    {
+      "id": "p0004",
+      "index": 3,
+      "text": "Creative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.",
+      "kind": "para",
+      "section": "s02",
+      "label": null,
+      "indent": 0,
+      "line": 17,
+      "fingerprint": "8805f79bf2f0"
+    },
+    {
+      "id": "p0005",
+      "index": 4,
+      "text": "Considerations for licensors: Our public licenses are intended for use by those authorized to give the public permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are irrevocable. Licensors should read and understand the terms and conditions of the license they choose before applying it. Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This includes other CC-licensed material, or material used under an exception or limitation to copyright. More considerations for licensors: wiki.creativecommons.org/Considerations_for_licensors",
+      "kind": "para",
+      "section": "s02",
+      "label": null,
+      "indent": 5,
+      "line": 24,
+      "fingerprint": "9063db55693c"
+    },
+    {
+      "id": "p0006",
+      "index": 5,
+      "text": "Considerations for the public: By using one of our public licenses, a licensor grants the public permission to use the licensed material under specified terms and conditions. If the licensor's permission is not necessary for any reason--for example, because of any applicable exception or limitation to copyright--then that use is not regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a licensor has authority to grant. Use of the licensed material may still be restricted for other reasons, including because others have copyright or other rights in the material. A licensor may make special requests, such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged to respect those requests where reasonable. More_considerations for the public: wiki.creativecommons.org/Considerations_for_licensees",
+      "kind": "para",
+      "section": "s02",
+      "label": null,
+      "indent": 5,
+      "line": 38,
+      "fingerprint": "c8d2786580ee"
+    },
+    {
+      "id": "p0007",
+      "index": 6,
+      "text": "Creative Commons Attribution 4.0 International Public License",
+      "kind": "heading",
+      "section": "s03",
+      "label": null,
+      "indent": 0,
+      "line": 57,
+      "fingerprint": "6c8c15c0cc19"
+    },
+    {
+      "id": "p0008",
+      "index": 7,
+      "text": "By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (\"Public License\"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.",
+      "kind": "para",
+      "section": "s03",
+      "label": null,
+      "indent": 0,
+      "line": 59,
+      "fingerprint": "f15e652fe47b"
+    },
+    {
+      "id": "p0009",
+      "index": 8,
+      "text": "Section 1 -- Definitions.",
+      "kind": "heading",
+      "section": "s04",
+      "label": null,
+      "indent": 0,
+      "line": 69,
+      "fingerprint": "1951b77c2dc0"
+    },
+    {
+      "id": "p0010",
+      "index": 9,
+      "text": "a. Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "a",
+      "indent": 2,
+      "line": 71,
+      "fingerprint": "b6d4eff63b5f"
+    },
+    {
+      "id": "p0011",
+      "index": 10,
+      "text": "b. Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "b",
+      "indent": 2,
+      "line": 81,
+      "fingerprint": "755448eaaa3b"
+    },
+    {
+      "id": "p0012",
+      "index": 11,
+      "text": "c. Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "c",
+      "indent": 2,
+      "line": 85,
+      "fingerprint": "b1489e102e6c"
+    },
+    {
+      "id": "p0013",
+      "index": 12,
+      "text": "d. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "d",
+      "indent": 2,
+      "line": 93,
+      "fingerprint": "52198db80899"
+    },
+    {
+      "id": "p0014",
+      "index": 13,
+      "text": "e. Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "e",
+      "indent": 2,
+      "line": 99,
+      "fingerprint": "49e15c1bd638"
+    },
+    {
+      "id": "p0015",
+      "index": 14,
+      "text": "f. Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "f",
+      "indent": 2,
+      "line": 103,
+      "fingerprint": "0d5cd8a53f66"
+    },
+    {
+      "id": "p0016",
+      "index": 15,
+      "text": "g. Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "g",
+      "indent": 2,
+      "line": 107,
+      "fingerprint": "05083523c1aa"
+    },
+    {
+      "id": "p0017",
+      "index": 16,
+      "text": "h. Licensor means the individual(s) or entity(ies) granting rights under this Public License.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "h",
+      "indent": 2,
+      "line": 112,
+      "fingerprint": "4434c5db46d4"
+    },
+    {
+      "id": "p0018",
+      "index": 17,
+      "text": "i. Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "i",
+      "indent": 2,
+      "line": 115,
+      "fingerprint": "a5b7e64c6843"
+    },
+    {
+      "id": "p0019",
+      "index": 18,
+      "text": "j. Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "j",
+      "indent": 2,
+      "line": 123,
+      "fingerprint": "838ba5d87127"
+    },
+    {
+      "id": "p0020",
+      "index": 19,
+      "text": "k. You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.",
+      "kind": "list_item",
+      "section": "s04",
+      "label": "k",
+      "indent": 2,
+      "line": 129,
+      "fingerprint": "53672bcda1fd"
+    },
+    {
+      "id": "p0021",
+      "index": 20,
+      "text": "Section 2 -- Scope.",
+      "kind": "heading",
+      "section": "s05",
+      "label": null,
+      "indent": 0,
+      "line": 133,
+      "fingerprint": "fb1837020472"
+    },
+    {
+      "id": "p0022",
+      "index": 21,
+      "text": "a. License grant.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "a",
+      "indent": 2,
+      "line": 135,
+      "fingerprint": "3d22e0c3f785"
+    },
+    {
+      "id": "p0023",
+      "index": 22,
+      "text": "1. Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "1",
+      "indent": 7,
+      "line": 137,
+      "fingerprint": "856f32e02940"
+    },
+    {
+      "id": "p0024",
+      "index": 23,
+      "text": "a. reproduce and Share the Licensed Material, in whole or in part; and",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "a",
+      "indent": 12,
+      "line": 142,
+      "fingerprint": "c85d06c75a9b"
+    },
+    {
+      "id": "p0025",
+      "index": 24,
+      "text": "b. produce, reproduce, and Share Adapted Material.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "b",
+      "indent": 12,
+      "line": 145,
+      "fingerprint": "ec0fbeb06eb7"
+    },
+    {
+      "id": "p0026",
+      "index": 25,
+      "text": "2. Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "2",
+      "indent": 7,
+      "line": 147,
+      "fingerprint": "f1ea328ad409"
+    },
+    {
+      "id": "p0027",
+      "index": 26,
+      "text": "3. Term. The term of this Public License is specified in Section 6(a).",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "3",
+      "indent": 7,
+      "line": 152,
+      "fingerprint": "fa9dee17f0e7"
+    },
+    {
+      "id": "p0028",
+      "index": 27,
+      "text": "4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a) (4) never produces Adapted Material.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "4",
+      "indent": 7,
+      "line": 155,
+      "fingerprint": "701b90c5435e"
+    },
+    {
+      "id": "p0029",
+      "index": 28,
+      "text": "5. Downstream recipients.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "5",
+      "indent": 7,
+      "line": 167,
+      "fingerprint": "72da739a98da"
+    },
+    {
+      "id": "p0030",
+      "index": 29,
+      "text": "a. Offer from the Licensor -- Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "a",
+      "indent": 12,
+      "line": 169,
+      "fingerprint": "f293a24bad18"
+    },
+    {
+      "id": "p0031",
+      "index": 30,
+      "text": "b. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "b",
+      "indent": 12,
+      "line": 175,
+      "fingerprint": "de85633b6c46"
+    },
+    {
+      "id": "p0032",
+      "index": 31,
+      "text": "6. No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "6",
+      "indent": 7,
+      "line": 182,
+      "fingerprint": "36f5801de9a5"
+    },
+    {
+      "id": "p0033",
+      "index": 32,
+      "text": "b. Other rights.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "b",
+      "indent": 2,
+      "line": 189,
+      "fingerprint": "b8bf88ca12be"
+    },
+    {
+      "id": "p0034",
+      "index": 33,
+      "text": "1. Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "1",
+      "indent": 7,
+      "line": 191,
+      "fingerprint": "22dab999a6b2"
+    },
+    {
+      "id": "p0035",
+      "index": 34,
+      "text": "2. Patent and trademark rights are not licensed under this Public License.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "2",
+      "indent": 7,
+      "line": 199,
+      "fingerprint": "aa3f7f8719fb"
+    },
+    {
+      "id": "p0036",
+      "index": 35,
+      "text": "3. To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.",
+      "kind": "list_item",
+      "section": "s05",
+      "label": "3",
+      "indent": 7,
+      "line": 202,
+      "fingerprint": "98ed3edc2cff"
+    },
+    {
+      "id": "p0037",
+      "index": 36,
+      "text": "Section 3 -- License Conditions.",
+      "kind": "heading",
+      "section": "s06",
+      "label": null,
+      "indent": 0,
+      "line": 210,
+      "fingerprint": "5318fab907b9"
+    },
+    {
+      "id": "p0038",
+      "index": 37,
+      "text": "Your exercise of the Licensed Rights is expressly made subject to the following conditions.",
+      "kind": "para",
+      "section": "s06",
+      "label": null,
+      "indent": 0,
+      "line": 212,
+      "fingerprint": "47a9c62fbfd9"
+    },
+    {
+      "id": "p0039",
+      "index": 38,
+      "text": "a. Attribution.",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "a",
+      "indent": 2,
+      "line": 215,
+      "fingerprint": "1edcf0022ea6"
+    },
+    {
+      "id": "p0040",
+      "index": 39,
+      "text": "1. If You Share the Licensed Material (including in modified form), You must:",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "1",
+      "indent": 7,
+      "line": 217,
+      "fingerprint": "84d6de7bbb49"
+    },
+    {
+      "id": "p0041",
+      "index": 40,
+      "text": "a. retain the following if it is supplied by the Licensor with the Licensed Material:",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "a",
+      "indent": 12,
+      "line": 220,
+      "fingerprint": "8a4ce6e427aa"
+    },
+    {
+      "id": "p0042",
+      "index": 41,
+      "text": "i. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "i",
+      "indent": 17,
+      "line": 223,
+      "fingerprint": "20404154ebef"
+    },
+    {
+      "id": "p0043",
+      "index": 42,
+      "text": "ii. a copyright notice;",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "ii",
+      "indent": 16,
+      "line": 229,
+      "fingerprint": "664accfb5bc1"
+    },
+    {
+      "id": "p0044",
+      "index": 43,
+      "text": "iii. a notice that refers to this Public License;",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "iii",
+      "indent": 15,
+      "line": 231,
+      "fingerprint": "66aad67f1d57"
+    },
+    {
+      "id": "p0045",
+      "index": 44,
+      "text": "iv. a notice that refers to the disclaimer of warranties;",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "iv",
+      "indent": 16,
+      "line": 233,
+      "fingerprint": "4236a04cf25e"
+    },
+    {
+      "id": "p0046",
+      "index": 45,
+      "text": "v. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "v",
+      "indent": 17,
+      "line": 236,
+      "fingerprint": "0e46580178cc"
+    },
+    {
+      "id": "p0047",
+      "index": 46,
+      "text": "b. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "b",
+      "indent": 12,
+      "line": 239,
+      "fingerprint": "8698cd47f949"
+    },
+    {
+      "id": "p0048",
+      "index": 47,
+      "text": "c. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "c",
+      "indent": 12,
+      "line": 242,
+      "fingerprint": "05c639346649"
+    },
+    {
+      "id": "p0049",
+      "index": 48,
+      "text": "2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "2",
+      "indent": 7,
+      "line": 246,
+      "fingerprint": "9854456cc5b8"
+    },
+    {
+      "id": "p0050",
+      "index": 49,
+      "text": "3. If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "3",
+      "indent": 7,
+      "line": 253,
+      "fingerprint": "e99ed84c63fc"
+    },
+    {
+      "id": "p0051",
+      "index": 50,
+      "text": "4. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.",
+      "kind": "list_item",
+      "section": "s06",
+      "label": "4",
+      "indent": 7,
+      "line": 257,
+      "fingerprint": "dd89d336c6d0"
+    },
+    {
+      "id": "p0052",
+      "index": 51,
+      "text": "Section 4 -- Sui Generis Database Rights.",
+      "kind": "heading",
+      "section": "s07",
+      "label": null,
+      "indent": 0,
+      "line": 262,
+      "fingerprint": "b8af07602a78"
+    },
+    {
+      "id": "p0053",
+      "index": 52,
+      "text": "Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:",
+      "kind": "para",
+      "section": "s07",
+      "label": null,
+      "indent": 0,
+      "line": 264,
+      "fingerprint": "eb791d24717c"
+    },
+    {
+      "id": "p0054",
+      "index": 53,
+      "text": "a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;",
+      "kind": "list_item",
+      "section": "s07",
+      "label": "a",
+      "indent": 2,
+      "line": 267,
+      "fingerprint": "64830abc0922"
+    },
+    {
+      "id": "p0055",
+      "index": 54,
+      "text": "b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and",
+      "kind": "list_item",
+      "section": "s07",
+      "label": "b",
+      "indent": 2,
+      "line": 271,
+      "fingerprint": "9c91723ec132"
+    },
+    {
+      "id": "p0056",
+      "index": 55,
+      "text": "c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.",
+      "kind": "list_item",
+      "section": "s07",
+      "label": "c",
+      "indent": 2,
+      "line": 276,
+      "fingerprint": "4c8dee1c73ed"
+    },
+    {
+      "id": "p0057",
+      "index": 56,
+      "text": "For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.",
+      "kind": "para",
+      "section": "s07",
+      "label": null,
+      "indent": 0,
+      "line": 279,
+      "fingerprint": "3e5375fada74"
+    },
+    {
+      "id": "p0058",
+      "index": 57,
+      "text": "Section 5 -- Disclaimer of Warranties and Limitation of Liability.",
+      "kind": "heading",
+      "section": "s08",
+      "label": null,
+      "indent": 0,
+      "line": 284,
+      "fingerprint": "754338a6b6f3"
+    },
+    {
+      "id": "p0059",
+      "index": 58,
+      "text": "a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.",
+      "kind": "list_item",
+      "section": "s08",
+      "label": "a",
+      "indent": 2,
+      "line": 286,
+      "fingerprint": "ba686999a0f0"
+    },
+    {
+      "id": "p0060",
+      "index": 59,
+      "text": "b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.",
+      "kind": "list_item",
+      "section": "s08",
+      "label": "b",
+      "indent": 2,
+      "line": 297,
+      "fingerprint": "e45a89444e71"
+    },
+    {
+      "id": "p0061",
+      "index": 60,
+      "text": "c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.",
+      "kind": "list_item",
+      "section": "s08",
+      "label": "c",
+      "indent": 2,
+      "line": 307,
+      "fingerprint": "89195412dd48"
+    },
+    {
+      "id": "p0062",
+      "index": 61,
+      "text": "Section 6 -- Term and Termination.",
+      "kind": "heading",
+      "section": "s09",
+      "label": null,
+      "indent": 0,
+      "line": 313,
+      "fingerprint": "f480a172d318"
+    },
+    {
+      "id": "p0063",
+      "index": 62,
+      "text": "a. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.",
+      "kind": "list_item",
+      "section": "s09",
+      "label": "a",
+      "indent": 2,
+      "line": 315,
+      "fingerprint": "825d506754e3"
+    },
+    {
+      "id": "p0064",
+      "index": 63,
+      "text": "b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:",
+      "kind": "list_item",
+      "section": "s09",
+      "label": "b",
+      "indent": 2,
+      "line": 320,
+      "fingerprint": "2a52ac787c1f"
+    },
+    {
+      "id": "p0065",
+      "index": 64,
+      "text": "1. automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or",
+      "kind": "list_item",
+      "section": "s09",
+      "label": "1",
+      "indent": 7,
+      "line": 323,
+      "fingerprint": "accefc3a069e"
+    },
+    {
+      "id": "p0066",
+      "index": 65,
+      "text": "2. upon express reinstatement by the Licensor.",
+      "kind": "list_item",
+      "section": "s09",
+      "label": "2",
+      "indent": 7,
+      "line": 327,
+      "fingerprint": "02e3e1c09503"
+    },
+    {
+      "id": "p0067",
+      "index": 66,
+      "text": "For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.",
+      "kind": "para",
+      "section": "s09",
+      "label": null,
+      "indent": 5,
+      "line": 329,
+      "fingerprint": "4551b31a1aef"
+    },
+    {
+      "id": "p0068",
+      "index": 67,
+      "text": "c. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.",
+      "kind": "list_item",
+      "section": "s09",
+      "label": "c",
+      "indent": 2,
+      "line": 333,
+      "fingerprint": "9708cb723d01"
+    },
+    {
+      "id": "p0069",
+      "index": 68,
+      "text": "d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.",
+      "kind": "list_item",
+      "section": "s09",
+      "label": "d",
+      "indent": 2,
+      "line": 338,
+      "fingerprint": "3014e7898fb2"
+    },
+    {
+      "id": "p0070",
+      "index": 69,
+      "text": "Section 7 -- Other Terms and Conditions.",
+      "kind": "heading",
+      "section": "s10",
+      "label": null,
+      "indent": 0,
+      "line": 342,
+      "fingerprint": "0d4ba93b9464"
+    },
+    {
+      "id": "p0071",
+      "index": 70,
+      "text": "a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.",
+      "kind": "list_item",
+      "section": "s10",
+      "label": "a",
+      "indent": 2,
+      "line": 344,
+      "fingerprint": "eb43fc10ed8e"
+    },
+    {
+      "id": "p0072",
+      "index": 71,
+      "text": "b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.",
+      "kind": "list_item",
+      "section": "s10",
+      "label": "b",
+      "indent": 2,
+      "line": 347,
+      "fingerprint": "c203c80d41ce"
+    },
+    {
+      "id": "p0073",
+      "index": 72,
+      "text": "Section 8 -- Interpretation.",
+      "kind": "heading",
+      "section": "s11",
+      "label": null,
+      "indent": 0,
+      "line": 352,
+      "fingerprint": "f38b761f2a7c"
+    },
+    {
+      "id": "p0074",
+      "index": 73,
+      "text": "a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.",
+      "kind": "list_item",
+      "section": "s11",
+      "label": "a",
+      "indent": 2,
+      "line": 354,
+      "fingerprint": "b8db14337806"
+    },
+    {
+      "id": "p0075",
+      "index": 74,
+      "text": "b. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.",
+      "kind": "list_item",
+      "section": "s11",
+      "label": "b",
+      "indent": 2,
+      "line": 359,
+      "fingerprint": "e52acc775d03"
+    },
+    {
+      "id": "p0076",
+      "index": 75,
+      "text": "c. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.",
+      "kind": "list_item",
+      "section": "s11",
+      "label": "c",
+      "indent": 2,
+      "line": 366,
+      "fingerprint": "d2b65c98e22a"
+    },
+    {
+      "id": "p0077",
+      "index": 76,
+      "text": "d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.",
+      "kind": "list_item",
+      "section": "s11",
+      "label": "d",
+      "indent": 2,
+      "line": 370,
+      "fingerprint": "4e6047c43896"
+    },
+    {
+      "id": "p0078",
+      "index": 77,
+      "text": "Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark \"Creative Commons\" or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.",
+      "kind": "para",
+      "section": "s11",
+      "label": null,
+      "indent": 0,
+      "line": 378,
+      "fingerprint": "768219fda234"
+    },
+    {
+      "id": "p0079",
+      "index": 78,
+      "text": "Creative Commons may be contacted at creativecommons.org.",
+      "kind": "para",
+      "section": "s11",
+      "label": null,
+      "indent": 0,
+      "line": 395,
+      "fingerprint": "02c6f3353eec"
+    }
+  ],
+  "sections": [
+    {
+      "key": "s01",
+      "title": "Attribution 4.0 International",
+      "number": null,
+      "para_ids": [
+        "p0001",
+        "p0002"
+      ]
+    },
+    {
+      "key": "s02",
+      "title": "Using Creative Commons Public Licenses",
+      "number": null,
+      "para_ids": [
+        "p0003",
+        "p0004",
+        "p0005",
+        "p0006"
+      ]
+    },
+    {
+      "key": "s03",
+      "title": "Creative Commons Attribution 4.0 International Public License",
+      "number": null,
+      "para_ids": [
+        "p0007",
+        "p0008"
+      ]
+    },
+    {
+      "key": "s04",
+      "title": "Section 1 -- Definitions.",
+      "number": "1",
+      "para_ids": [
+        "p0009",
+        "p0010",
+        "p0011",
+        "p0012",
+        "p0013",
+        "p0014",
+        "p0015",
+        "p0016",
+        "p0017",
+        "p0018",
+        "p0019",
+        "p0020"
+      ]
+    },
+    {
+      "key": "s05",
+      "title": "Section 2 -- Scope.",
+      "number": "2",
+      "para_ids": [
+        "p0021",
+        "p0022",
+        "p0023",
+        "p0024",
+        "p0025",
+        "p0026",
+        "p0027",
+        "p0028",
+        "p0029",
+        "p0030",
+        "p0031",
+        "p0032",
+        "p0033",
+        "p0034",
+        "p0035",
+        "p0036"
+      ]
+    },
+    {
+      "key": "s06",
+      "title": "Section 3 -- License Conditions.",
+      "number": "3",
+      "para_ids": [
+        "p0037",
+        "p0038",
+        "p0039",
+        "p0040",
+        "p0041",
+        "p0042",
+        "p0043",
+        "p0044",
+        "p0045",
+        "p0046",
+        "p0047",
+        "p0048",
+        "p0049",
+        "p0050",
+        "p0051"
+      ]
+    },
+    {
+      "key": "s07",
+      "title": "Section 4 -- Sui Generis Database Rights.",
+      "number": "4",
+      "para_ids": [
+        "p0052",
+        "p0053",
+        "p0054",
+        "p0055",
+        "p0056",
+        "p0057"
+      ]
+    },
+    {
+      "key": "s08",
+      "title": "Section 5 -- Disclaimer of Warranties and Limitation of Liability.",
+      "number": "5",
+      "para_ids": [
+        "p0058",
+        "p0059",
+        "p0060",
+        "p0061"
+      ]
+    },
+    {
+      "key": "s09",
+      "title": "Section 6 -- Term and Termination.",
+      "number": "6",
+      "para_ids": [
+        "p0062",
+        "p0063",
+        "p0064",
+        "p0065",
+        "p0066",
+        "p0067",
+        "p0068",
+        "p0069"
+      ]
+    },
+    {
+      "key": "s10",
+      "title": "Section 7 -- Other Terms and Conditions.",
+      "number": "7",
+      "para_ids": [
+        "p0070",
+        "p0071",
+        "p0072"
+      ]
+    },
+    {
+      "key": "s11",
+      "title": "Section 8 -- Interpretation.",
+      "number": "8",
+      "para_ids": [
+        "p0073",
+        "p0074",
+        "p0075",
+        "p0076",
+        "p0077",
+        "p0078",
+        "p0079"
+      ]
+    }
+  ]
+}

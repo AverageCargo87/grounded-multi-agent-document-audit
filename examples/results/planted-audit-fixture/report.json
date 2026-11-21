@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "run": {
+    "label": "planted-audit-fixture",
+    "mode": "audit",
+    "runner": "python",
+    "backend": "fake",
+    "model": null,
+    "fixture": true,
+    "docaudit_version": "0.1.0",
+    "docs": {
+      "A": {
+        "source": "examples/planted/cc-by-4.0-planted.txt",
+        "sha256": "c6e691013a779cee21fe6abc10ab5a609e3a4902d820ed36ff669398d5da5b18",
+        "format": "txt",
+        "paragraphs": 80,
+        "sections": 12
+      }
+    },
+    "alignment": null,
+    "chunks": 2
+  },
+  "pipeline": {
+    "verification": {
+      "agent_findings": 4,
+      "accepted": 4,
+      "rejected": 0,
+      "rejection_rate": 0.0,
+      "rejection_reasons": {},
+      "evidence_match_levels": {
+        "exact": 4
+      },
+      "evidence_relocated": 0,
+      "sweep_findings": 2
+    },
+    "missed_verification": {
+      "agent_findings": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "rejection_rate": 0.0,
+      "rejection_reasons": {},
+      "evidence_match_levels": {},
+      "evidence_relocated": 0,
+      "sweep_findings": 0
+    },
+    "missed_attached_to_existing": 0,
+    "merged_findings": 3,
+    "coverage_first_pass": null,
+    "coverage": null,
+    "skeptic": {
+      "verdicts": 3,
+      "by_verdict": {
+        "refuted": 1,
+        "upheld": 2
+      },
+      "by_effective": {
+        "upheld": 2,
+        "weakened": 1
+      },
+      "ungrounded_refutations": 1,
+      "unknown_finding_ids": []
+    },
+    "status_counts": {
+      "downgraded": 1,
+      "upheld": 2
+    },
+    "agent_failures": [],
+    "incomplete": null,
+    "usage": {
+      "calls": 7,
+      "input_tokens": 28889,
+      "output_tokens": 637,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.0,
+      "caps": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null
+      },
+      "priced": false
+    }
+  },
+  "summary": {
+    "executive_summary": "3 findings survived quote verification and the skeptic stage (2 major, 1 info). The first to read is F003: Cross-reference to a non-existent target: Section 9(a). Its evidence reads \"Section 9(a)\". 0 findings were refuted by skeptics and 0 are low-confidence.",
+    "themes": [
+      {
+        "title": "broken_reference (1)",
+        "finding_ids": [
+          "F003"
+        ]
+      },
+      {
+        "title": "undefined_term (1)",
+        "finding_ids": [
+          "F001"
+        ]
+      },
+      {
+        "title": "omission (1)",
+        "finding_ids": [
+          "F002"
+        ]
+      }
+    ],
+    "issues": [],
+    "unverified_quotes": []
+  },
+  "findings": [
+    {
+      "id": "F003",
+      "kind": "broken_reference",
+      "title": "Cross-reference to a non-existent target: Section 9(a)",
+      "description": "The text refers to Section 9(a), but no Section 9 in this document.",
+      "severity": "major",
+      "confidence": 0.9775,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0065",
+          "quote": "Section 9(a)",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "reader-c02",
+        "sweep"
+      ],
+      "members": 2,
+      "position": [
+        64
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b03-v1",
+          "finding_id": "F003",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.97,
+      "status": "upheld"
+    },
+    {
+      "id": "F001",
+      "kind": "undefined_term",
+      "title": "'Granted Rights' is used like a defined term but is never defined",
+      "description": "The capitalised phrase 'Granted Rights' reads like a defined term, but no definition exists.",
+      "severity": "major",
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0029",
+          "quote": "uthorizes You to exercise the Granted Rights in all media and formats whet",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "crossref",
+        "reader-c01"
+      ],
+      "members": 2,
+      "position": [
+        28
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b01-v1",
+          "finding_id": "F001",
+          "verdict": "upheld",
+          "effective": "upheld",
+          "reason": "Re-read the cited text; the finding holds.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": []
+        }
+      ],
+      "original_severity": "major",
+      "original_confidence": 0.84,
+      "status": "upheld"
+    },
+    {
+      "id": "F002",
+      "kind": "omission",
+      "title": "Numbering gap: item 3 is missing",
+      "description": "Item 4 follows the item before it, but 3 was expected; an item may have been deleted or the list renumbered incompletely.",
+      "severity": "info",
+      "confidence": 0.54,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0050",
+          "quote": "2. You may satisfy the conditions in Section",
+          "match": "exact",
+          "relocated": false
+        },
+        {
+          "doc": "A",
+          "para_id": "p0051",
+          "quote": "4. If You Share Adapted Material You produce,",
+          "match": "exact",
+          "relocated": false
+        }
+      ],
+      "sources": [
+        "crossref",
+        "sweep"
+      ],
+      "members": 2,
+      "position": [
+        49
+      ],
+      "verdicts": [
+        {
+          "source": "skeptic-b02-v1",
+          "finding_id": "F002",
+          "verdict": "refuted",
+          "effective": "weakened",
+          "reason": "The numbering may be intentional.",
+          "suggested_severity": "keep",
+          "counter_evidence": [],
+          "notes": [
+            "ungrounded refutation: no verified counter-evidence, treated as weakened"
+          ]
+        }
+      ],
+      "original_severity": "minor",
+      "original_confidence": 0.9,
+      "status": "downgraded"
+    }
+  ],
+  "low_confidence": [],
+  "killed": [],
+  "rejected": [],
+  "paragraphs": {
+    "A:p0029": {
+      "text": "4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Granted Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a) (4) never produces Adapted Material.",
+      "section": "Section 2 -- Scope."
+    },
+    "A:p0050": {
+      "text": "2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.",
+      "section": "Section 3 -- License Conditions."
+    },
+    "A:p0051": {
+      "text": "4. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.",
+      "section": "Section 3 -- License Conditions."
+    },
+    "A:p0065": {
+      "text": "b. Where Your right to use the Licensed Material has terminated under Section 9(a), it reinstates:",
+      "section": "Section 6 -- Term and Termination."
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "findings": [
+    {
+      "kind": "contradiction",
+      "title": "Section 2(a)(1) grant made 'revocable' in B, contradicting the irrevocability statement and Section 6(c)",
+      "description": "A granted an 'irrevocable' license; B's Section 2(a)(1) grants a 'revocable' one. The change was not carried through: the licensor considerations still state 'Our licenses are irrevocable', and Section 6(c) still says the Licensor stopping distribution 'will not terminate this Public License'. B gives no mechanism or grounds for revocation, so a reader cannot tell whether, or how, the Licensor may withdraw the grant.",
+      "severity": "critical",
+      "confidence": 0.85,
+      "evidence": [
+        {"doc": "B", "para_id": "p0024", "quote": "non-sublicensable, non-exclusive, revocable license to exercise the Licensed Rights"},
+        {"doc": "B", "para_id": "p0006", "quote": "Our licenses are irrevocable."},
+        {"doc": "B", "para_id": "p0069", "quote": "stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License."},
+        {"doc": "A", "para_id": "p0023", "quote": "non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights"}
+      ]
+    },
+    {
+      "kind": "contradiction",
+      "title": "Section 2(a)(3) term of five years in B conflicts with Section 6(a) term of the underlying rights",
+      "description": "In A, Section 2(a)(3) only pointed to Section 6(a) for the term. B replaces the pointer with a fixed term of five years from acceptance, but Section 6(a) was left unchanged and still says the license applies for the term of the Copyright and Similar Rights. B therefore states two different durations for the same license, and the cross-reference that kept them aligned is gone.",
+      "severity": "major",
+      "confidence": 0.85,
+      "evidence": [
+        {"doc": "B", "para_id": "p0028", "quote": "3. Term. The term of this Public License is five years from the date You accept it."},
+        {"doc": "B", "para_id": "p0064", "quote": "This Public License applies for the term of the Copyright and Similar Rights licensed here."},
+        {"doc": "A", "para_id": "p0027", "quote": "3. Term. The term of this Public License is specified in Section 6(a)."}
+      ]
+    },
+    {
+      "kind": "contradiction",
+      "title": "Section 6(d) survival list drops Section 6, although Section 6(b) only operates after termination",
+      "description": "A listed Sections 1, 5, 6, 7 and 8 as surviving termination; B drops Section 6. But Section 6(b), which provides for reinstatement after termination and preserves the Licensor's right to seek remedies for violations, only matters once the license has terminated. If Section 6 does not survive termination, the reinstatement mechanism and the remedies saving clause are self-defeating.",
+      "severity": "major",
+      "confidence": 0.7,
+      "evidence": [
+        {"doc": "B", "para_id": "p0070", "quote": "d. Sections 1, 5, 7, and 8 survive termination of this Public License."},
+        {"doc": "B", "para_id": "p0065", "quote": "Where Your right to use the Licensed Material has terminated under Section 9(a), it reinstates:"},
+        {"doc": "B", "para_id": "p0068", "quote": "this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License."},
+        {"doc": "A", "para_id": "p0069", "quote": "d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License."}
+      ]
+    },
+    {
+      "kind": "contradiction",
+      "title": "Section 2(a)(5)(b) now permits downstream restrictions, conflicting with Sections 2(a)(5)(a) and 3(a)(4)",
+      "description": "A prohibited You from imposing additional terms or Effective Technological Measures that restrict recipients; B turns this into a permission ('You may offer or impose') under the unchanged heading 'No downstream restrictions'. This conflicts with Section 2(a)(5)(a), under which every recipient automatically receives the Licensor's offer on this license's terms, and with Section 3(a)(4), which still forbids an Adapter's License from preventing recipients of Adapted Material from complying. B therefore restricts restrictions on recipients of Adapted Material but allows them on recipients of the Licensed Material itself.",
+      "severity": "critical",
+      "confidence": 0.7,
+      "evidence": [
+        {"doc": "B", "para_id": "p0032", "quote": "You may offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient"},
+        {"doc": "B", "para_id": "p0031", "quote": "Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License."},
+        {"doc": "B", "para_id": "p0051", "quote": "the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License."},
+        {"doc": "A", "para_id": "p0031", "quote": "b. No downstream restrictions. You may not offer or impose any additional or different terms"}
+      ]
+    },
+    {
+      "kind": "undefined_term",
+      "title": "Section 2(a)(4) uses undefined term 'Granted Rights' instead of the defined term 'Licensed Rights'",
+      "description": "In A, Section 2(a)(4) authorized You to exercise the 'Licensed Rights' in all media and formats. B replaces this with 'Granted Rights', which Section 1 does not define. The next sentence of the same paragraph still uses 'Licensed Rights'. The scope of the media-and-formats authorization is therefore unclear.",
+      "severity": "major",
+      "confidence": 0.75,
+      "evidence": [
+        {"doc": "B", "para_id": "p0029", "quote": "The Licensor authorizes You to exercise the Granted Rights in all media and formats"},
+        {"doc": "B", "para_id": "p0017", "quote": "g. Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License"},
+        {"doc": "A", "para_id": "p0028", "quote": "The Licensor authorizes You to exercise the Licensed Rights in all media and formats"}
+      ]
+    },
+    {
+      "kind": "contradiction",
+      "title": "Section 4(c) softened to 'should comply', inconsistent with Section 3 preamble and Section 4 closing sentence",
+      "description": "A required You to comply with the Section 3(a) conditions when Sharing all or a substantial portion of a database ('must'); B says You 'should' comply, which reads as advisory. Section 3 still states that all exercise of the Licensed Rights, which include Sui Generis Database Rights, is 'expressly made subject to' those conditions. The closing sentence of Section 4 still speaks of Your obligations. B is therefore unclear on whether attribution is mandatory for database sharing.",
+      "severity": "major",
+      "confidence": 0.6,
+      "evidence": [
+        {"doc": "B", "para_id": "p0057", "quote": "c. You should comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database."},
+        {"doc": "B", "para_id": "p0039", "quote": "Your exercise of the Licensed Rights is expressly made subject to the following conditions."},
+        {"doc": "B", "para_id": "p0058", "quote": "this Section 4 supplements and does not replace Your obligations under this Public License"},
+        {"doc": "A", "para_id": "p0056", "quote": "c. You must comply with the conditions in Section 3(a) if You Share"}
+      ]
+    },
+    {
+      "kind": "undefined_term",
+      "title": "New Section 3(a)(5) notice duty relies on undefined 'commercial purposes' and reaches database sharing via Section 4(c)",
+      "description": "B inserts a duty to notify the Licensor 10 days before Sharing 'for commercial purposes'. Section 1 does not define commercial purposes, and nothing else in B uses the term, so the trigger for the duty is undefined. Because Section 4(c) refers generally to 'the conditions in Section 3(a)', the new notice duty also reaches database sharing. It does so through a cross-reference that in A covered only attribution conditions.",
+      "severity": "minor",
+      "confidence": 0.5,
+      "evidence": [
+        {"doc": "B", "para_id": "p0052", "quote": "5. If You Share the Licensed Material for commercial purposes, You must notify the Licensor in writing at least 10 days in advance."},
+        {"doc": "B", "para_id": "p0057", "quote": "comply with the conditions in Section 3(a) if You Share all or a substantial portion"}
+      ]
+    },
+    {
+      "kind": "moved",
+      "title": "Privileges-and-immunities clause moved from Section 8(d) (Interpretation) to Section 7(c) (Other Terms)",
+      "description": "The clause stating that nothing in the license limits or waives privileges and immunities was Section 8(d) in A. In B it is Section 7(c). Its wording is the same, so this is a move, not a deletion plus an insertion. Both sections remain in the survival list, so its effect is unchanged. Only citations to 'Section 8(d)' would break.",
+      "severity": "minor",
+      "confidence": 0.85,
+      "evidence": [
+        {"doc": "A", "para_id": "p0077", "quote": "d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities"},
+        {"doc": "B", "para_id": "p0074", "quote": "c. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities"}
+      ]
+    }
+  ],
+  "coverage_note": "Read the full A and B texts against the index. I checked every cross-reference in both versions, all defined terms against their uses, the numeric expressions (30->60 days, new 10 days), and the four alignment ops (Op 0 insert, Op 50 delete, Op 52 insert, Op 74 move). Reported only where a change conflicts with a distant passage or with a dependent reference, plus the Op 74 move. Left to chunk readers as local findings: B:p0001 fixture front matter insertion; B:p0011 narrowing of 'Adapted Material' to 'translated or altered' (possible knock-on: arranged or transformed works may fall outside the Section 2(a)(1)(b) grant, not reported separately); B:p0066 cure period 30->60 days; B:p0072 Section 7(a) reversal of who is not bound by additional terms; A:p0050 deletion of 3(a)(3) licensor removal request; the core insertion at B:p0052. Already in the deterministic sweep and not repeated: dangling Section 9(a) at B:p0065, numbering gap at B:p0050/p0051. Judged editorial: B:p0009 curly quotes around 'Public License'; B:p0019 dropped serial comma; B:p0020 'essen-tially' hyphenation; B:p0036 'licenced'/'Public Licence' British spelling, a variant of the defined term with no change in meaning."
+}

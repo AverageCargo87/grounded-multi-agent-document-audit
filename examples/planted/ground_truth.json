@@ -1,0 +1,344 @@
+{
+  "description": "Planted changes between the CC BY 4.0 legal code (A) and an evaluation copy (B). Diff mode compares A with B; audit mode audits B alone against the audit_anchors items.",
+  "base": "examples/planted/cc-by-4.0.txt",
+  "fixture": "examples/planted/cc-by-4.0-planted.txt",
+  "generator": "scripts/make_planted.py",
+  "items": [
+    {
+      "id": "X00",
+      "category": "fixture_banner",
+      "substantive": false,
+      "modes": [
+        "diff"
+      ],
+      "description": "Fixture banner added at the top (expected, not scored).",
+      "anchors_b": [
+        "EVALUATION FIXTURE. This file is a deliberately modified copy"
+      ],
+      "ignore": true
+    },
+    {
+      "id": "P01",
+      "category": "changed_value",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "Cure period for automatic reinstatement doubled from 30 to 60 days (Section 6(b)(1)).",
+      "anchors_a": [
+        "cured within 30 days"
+      ],
+      "anchors_b": [
+        "cured within 60 days"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P02",
+      "category": "changed_permission",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "Prohibition on imposing additional terms on recipients turned into a permission (Section 2(a)(5)(B)).",
+      "anchors_a": [
+        "You may not offer or impose"
+      ],
+      "anchors_b": [
+        "You may offer or impose"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P03",
+      "category": "removed_clause",
+      "substantive": true,
+      "modes": [
+        "diff",
+        "audit"
+      ],
+      "description": "Section 3(a)(3) (removal of attribution on request) deleted; the list now jumps from 2 to 4.",
+      "anchors_a": [
+        "If requested by the Licensor, You must remove any of the"
+      ],
+      "anchors_b": [
+        "4. If You Share Adapted Material You produce"
+      ],
+      "audit_anchors": [
+        "4. If You Share Adapted Material You produce",
+        "2. You may satisfy the conditions in Section 3(a)(1)"
+      ],
+      "audit_kinds": [
+        "omission",
+        "inconsistent_value",
+        "other"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P04",
+      "category": "added_obligation",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "New Section 3(a)(5): advance written notice before commercial sharing.",
+      "anchors_b": [
+        "You must notify the Licensor in writing at least 10 days"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P05",
+      "category": "changed_grant",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "License grant changed from irrevocable to revocable (Section 2(a)(1)).",
+      "anchors_a": [
+        "non-exclusive, irrevocable license"
+      ],
+      "anchors_b": [
+        "non-exclusive, revocable license"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P06",
+      "category": "changed_party",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "Parties swapped in Section 7(a): the licensee, not the Licensor, is protected from additional terms.",
+      "anchors_a": [
+        "The Licensor shall not be bound by any additional"
+      ],
+      "anchors_b": [
+        "You shall not be bound by any additional"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P07",
+      "category": "broken_reference",
+      "substantive": true,
+      "modes": [
+        "diff",
+        "audit"
+      ],
+      "description": "Reference in Section 6(b) changed to Section 9(a), which does not exist.",
+      "anchors_a": [
+        "terminated under Section 6(a), it reinstates"
+      ],
+      "anchors_b": [
+        "terminated under Section 9(a), it reinstates"
+      ],
+      "audit_anchors": [
+        "terminated under Section 9(a), it reinstates"
+      ],
+      "audit_kinds": [
+        "broken_reference",
+        "other"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P08",
+      "category": "changed_definition",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "Definition of Adapted Material narrowed: 'arranged, transformed, or otherwise modified' dropped (Section 1(a)).",
+      "anchors_a": [
+        "arranged, transformed, or otherwise modified"
+      ],
+      "anchors_b": [
+        "Licensed Material is translated or altered in a manner requiring"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P09",
+      "category": "weakened_obligation",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "Obligation in Section 4(c) weakened from 'must' to 'should'.",
+      "anchors_a": [
+        "You must comply with the conditions in Section 3(a)"
+      ],
+      "anchors_b": [
+        "You should comply with the conditions in Section 3(a)"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P10",
+      "category": "changed_value",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "Section 6 dropped from the list of sections that survive termination (Section 6(d)).",
+      "anchors_a": [
+        "Sections 1, 5, 6, 7, and 8 survive"
+      ],
+      "anchors_b": [
+        "Sections 1, 5, 7, and 8 survive"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P11",
+      "category": "contradiction",
+      "substantive": true,
+      "modes": [
+        "diff",
+        "audit"
+      ],
+      "description": "Section 2(a)(3) now sets a five-year term, contradicting Section 6(a) (term of the Copyright and Similar Rights).",
+      "anchors_a": [
+        "The term of this Public License is specified in Section"
+      ],
+      "anchors_b": [
+        "The term of this Public License is five years"
+      ],
+      "audit_anchors": [
+        "The term of this Public License is five years",
+        "This Public License applies for the term of the Copyright"
+      ],
+      "audit_kinds": [
+        "contradiction",
+        "inconsistent_value",
+        "ambiguity",
+        "other"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P12",
+      "category": "moved_clause",
+      "substantive": true,
+      "modes": [
+        "diff"
+      ],
+      "description": "Privileges-and-immunities clause moved from Section 8(d) to Section 7(c).",
+      "anchors_a": [
+        "privileges and immunities that apply to the Licensor or You"
+      ],
+      "anchors_b": [
+        "privileges and immunities that apply to the Licensor or You"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "P13",
+      "category": "undefined_term",
+      "substantive": true,
+      "modes": [
+        "diff",
+        "audit"
+      ],
+      "description": "Section 2(a)(4) now uses 'Granted Rights', a term that is never defined.",
+      "anchors_a": [
+        "authorizes You to exercise the Licensed Rights in all media"
+      ],
+      "anchors_b": [
+        "authorizes You to exercise the Granted Rights in all media"
+      ],
+      "audit_anchors": [
+        "authorizes You to exercise the Granted Rights in all media"
+      ],
+      "audit_kinds": [
+        "undefined_term",
+        "ambiguity",
+        "other"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "E01",
+      "category": "spelling_variant",
+      "substantive": false,
+      "modes": [
+        "diff"
+      ],
+      "description": "British spelling 'licenced' / 'Licence' in Section 2(b)(2). Editorial.",
+      "anchors_a": [
+        "Patent and trademark rights are not licensed"
+      ],
+      "anchors_b": [
+        "Patent and trademark rights are not licenced"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "E02",
+      "category": "rewrap",
+      "substantive": false,
+      "modes": [
+        "diff"
+      ],
+      "description": "Section 8(b) re-wrapped at a different line width. Whitespace only.",
+      "anchors_a": [
+        "deemed unenforceable, it shall be automatically reformed"
+      ],
+      "anchors_b": [
+        "deemed unenforceable, it shall be automatically reformed"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "E03",
+      "category": "typography",
+      "substantive": false,
+      "modes": [
+        "diff"
+      ],
+      "description": "Straight quotes replaced by typographic quotes in the preamble. Editorial.",
+      "anchors_a": [
+        "By exercising the Licensed Rights (defined below)"
+      ],
+      "anchors_b": [
+        "By exercising the Licensed Rights (defined below)"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "E04",
+      "category": "punctuation",
+      "substantive": false,
+      "modes": [
+        "diff"
+      ],
+      "description": "Serial comma removed in the definition of Share (Section 1(i)). Editorial.",
+      "anchors_a": [
+        "communication, or importation"
+      ],
+      "anchors_b": [
+        "communication or importation"
+      ],
+      "ignore": false
+    },
+    {
+      "id": "E05",
+      "category": "hyphenation",
+      "substantive": false,
+      "modes": [
+        "diff"
+      ],
+      "description": "Line-break hyphenation inside 'essentially' (Section 1(j)). Editorial.",
+      "anchors_a": [
+        "Directive 96/9/EC of the European Parliament"
+      ],
+      "anchors_b": [
+        "Directive 96/9/EC of the European Parliament"
+      ],
+      "ignore": false
+    }
+  ]
+}

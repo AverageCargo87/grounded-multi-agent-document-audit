@@ -1,0 +1,33 @@
+{
+  "run": "planted-audit-fixture",
+  "mode": "audit",
+  "source": "baseline",
+  "truth": "examples/planted/ground_truth.json",
+  "substantive_items": 4,
+  "found": [
+    "P03",
+    "P07"
+  ],
+  "missed": [
+    "P11",
+    "P13"
+  ],
+  "recall": 0.5,
+  "precision": 1.0,
+  "f1": 0.6667,
+  "findings_scored": 2,
+  "findings_correct": 2,
+  "findings_wrong": 0,
+  "findings_info_excluded": 0,
+  "findings_on_ignored_items": 0,
+  "editorial_items_flagged": [],
+  "false_positives": [],
+  "skeptic_false_kills": [],
+  "recall_by_category": {
+    "broken_reference": "1/1",
+    "contradiction": "0/1",
+    "removed_clause": "1/1",
+    "undefined_term": "0/1"
+  },
+  "quote_verifier": null
+}

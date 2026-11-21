@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "mode": "diff",
+  "label": "planted-diff-workflow",
+  "docs": {
+    "A": {
+      "source": "examples/planted/cc-by-4.0.txt",
+      "sha256": "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e",
+      "format": "txt",
+      "paragraphs": 79,
+      "sections": 11
+    },
+    "B": {
+      "source": "examples/planted/cc-by-4.0-planted.txt",
+      "sha256": "c6e691013a779cee21fe6abc10ab5a609e3a4902d820ed36ff669398d5da5b18",
+      "format": "txt",
+      "paragraphs": 80,
+      "sections": 12
+    }
+  },
+  "alignment": {
+    "equal": 65,
+    "modified": 12,
+    "inserted": 2,
+    "deleted": 1,
+    "moved": 1
+  },
+  "chunks": [
+    {
+      "id": "c01",
+      "file": "chunks/c01.md",
+      "ops": [
+        0,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "titles": [
+        "(front matter)",
+        "Section 1 -- Definitions.",
+        "Section 2 -- Scope.",
+        "Section 3 -- License Conditions.",
+        "Section 4 -- Sui Generis Database Rights.",
+        "Section 6 -- Term and Termination."
+      ],
+      "paras": {
+        "A": [
+          "p0010",
+          "p0018",
+          "p0023",
+          "p0027",
+          "p0028",
+          "p0031",
+          "p0035",
+          "p0050",
+          "p0056",
+          "p0064",
+          "p0065",
+          "p0069"
+        ],
+        "B": [
+          "p0001",
+          "p0011",
+          "p0019",
+          "p0024",
+          "p0028",
+          "p0029",
+          "p0032",
+          "p0036",
+          "p0052",
+          "p0057",
+          "p0065",
+          "p0066",
+          "p0070"
+        ]
+      },
+      "chars": 11227
+    },
+    {
+      "id": "c02",
+      "file": "chunks/c02.md",
+      "ops": [
+        71,
+        72,
+        73,
+        74
+      ],
+      "titles": [
+        "Section 7 -- Other Terms and Conditions."
+      ],
+      "paras": {
+        "A": [
+          "p0071",
+          "p0077"
+        ],
+        "B": [
+          "p0072",
+          "p0074"
+        ]
+      },
+      "chars": 1054
+    }
+  ],
+  "config": {
+    "chunk_chars": 12000,
+    "skeptic_batch_size": 12,
+    "skeptic_batches": 4,
+    "skeptic_votes": 1,
+    "low_confidence": 0.25
+  }
+}

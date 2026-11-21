@@ -1,0 +1,75 @@
+{
+  "verdicts": [
+    {
+      "finding_id": "F011",
+      "verdict": "upheld",
+      "reason": "A p0050 grants the Licensor a right to request removal of the Section 3(a)(1)(A) attribution information. I searched B for 'If requested by the Licensor', 'remove any of the information' and any other removal-on-request wording: none exists. B's Section 3(a) jumps from item 2 (p0050) to item 4 (p0051), confirming that item 3 was deleted, not moved or reworded. The Licensor's right and the licensee's matching obligation are both gone. Major is appropriate.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    },
+    {
+      "finding_id": "F012",
+      "verdict": "upheld",
+      "reason": "B p0052 is a new Section 3(a)(5) with no counterpart in A. A case-insensitive search for 'commercial', 'notify' and 'in writing' finds nothing in A's license text. 'Commercial purposes' is not defined in B's Section 1, so the claim that it is undefined holds. Section 3 makes the exercise of the Licensed Rights 'expressly made subject to the following conditions', and B p0064 (6(a)) terminates rights automatically on any failure to comply, so the claim about termination exposure is correct. I found no basis to refute or weaken it.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    },
+    {
+      "finding_id": "F013",
+      "verdict": "upheld",
+      "reason": "A p0056 says 'must comply' and B p0057 says 'should comply'; otherwise the two sentences are identical. One partial counter-argument is that Section 3(a)(1) still applies by its own terms whenever You Share the Licensed Material, and B p0058 says Section 4 'does not replace Your obligations'. That makes the practical effect ambiguous rather than a clean removal of attribution for database contents. Still, the specific Section 4(c) condition is demoted from mandatory to advisory and the text is now internally inconsistent, so the finding stands as stated at major.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    },
+    {
+      "finding_id": "F014",
+      "verdict": "upheld",
+      "reason": "B's headings run Section 1 (p0010) through Section 8 (p0075), with no Section 9, so 'Section 9(a)' in B p0065 resolves to nothing. B contains no remaining reference to Section 6(a) at all; even the Section 2(a)(3) term provision that pointed to 6(a) in A has been rewritten. So the link between automatic termination and reinstatement is broken. One weakness: the finding's evidence also cites the change to the survival list in p0070, which its description does not analyse. That is a separate change (reported below as missed), but it does not undercut the broken-reference claim.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    },
+    {
+      "finding_id": "F015",
+      "verdict": "upheld",
+      "reason": "A p0065 says 'within 30 days' and B p0066 says 'within 60 days'; the rest of the sentence is identical. No other cure period appears in either version. This is a substantive change to a duration that governs automatic reinstatement, so major is appropriate.",
+      "suggested_severity": "keep",
+      "counter_evidence": []
+    }
+  ],
+  "missed": [
+    {
+      "kind": "changed",
+      "title": "Section 6(d): Section 6 dropped from the list of provisions that survive termination",
+      "description": "Version A lists Sections 1, 5, 6, 7 and 8 as surviving termination; version B lists only Sections 1, 5, 7 and 8. Without survival, Section 6 itself (the reinstatement mechanism in 6(b), the preservation of the Licensor's remedies, and 6(c)) arguably stops applying once the license terminates, which is exactly when 6(b) is needed. F014 quotes this paragraph as evidence, but no finding in the batch describes or assesses this change.",
+      "severity": "major",
+      "confidence": 0.85,
+      "evidence": [
+        {"doc": "A", "para_id": "p0069", "quote": "d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License."},
+        {"doc": "B", "para_id": "p0070", "quote": "d. Sections 1, 5, 7, and 8 survive termination of this Public License."}
+      ]
+    },
+    {
+      "kind": "contradiction",
+      "title": "Term conflict: Section 2(a)(3) five-year term vs Section 6(a) term of the licensed rights in B",
+      "description": "In version A, Section 2(a)(3) defers to Section 6(a) for the term. In version B, Section 2(a)(3) states a fixed five-year term from acceptance, while Section 6(a) still says the license applies for the term of the Copyright and Similar Rights licensed. A reader cannot tell which term governs, and this also feeds into the termination and reinstatement scheme in Section 6.",
+      "severity": "major",
+      "confidence": 0.8,
+      "evidence": [
+        {"doc": "A", "para_id": "p0027", "quote": "3. Term. The term of this Public License is specified in Section 6(a)."},
+        {"doc": "B", "para_id": "p0028", "quote": "3. Term. The term of this Public License is five years from the date You accept it."},
+        {"doc": "B", "para_id": "p0064", "quote": "This Public License applies for the term of the Copyright and Similar Rights licensed here."}
+      ]
+    },
+    {
+      "kind": "omission",
+      "title": "Section 3(a) numbering gap in B: item 3 missing (2, 4, 5)",
+      "description": "After the deletion of A's Section 3(a)(3), version B did not renumber the remaining items, so Section 3(a) goes from item 2 to item 4 and then to the new item 5. The gap is a visible internal inconsistency. It makes citations to 'Section 3(a)(4)' and 'Section 3(a)(5)' fragile, since a reader may assume an item 3 exists or was meant to be renumbered.",
+      "severity": "minor",
+      "confidence": 0.6,
+      "evidence": [
+        {"doc": "B", "para_id": "p0050", "quote": "2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner"},
+        {"doc": "B", "para_id": "p0051", "quote": "4. If You Share Adapted Material You produce"}
+      ]
+    }
+  ]
+}

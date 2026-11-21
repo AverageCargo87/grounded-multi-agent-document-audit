@@ -1,0 +1,43 @@
+{
+  "findings": [
+    {
+      "kind": "changed",
+      "title": "Section 7(a): parties swapped, so the protection against unagreed additional terms now runs to You instead of the Licensor",
+      "description": "In A, Section 7(a) says the Licensor is not bound by additional or different terms that You communicate unless it expressly agrees. In B the roles are reversed: You are not bound by additional or different terms that the Licensor communicates. The protection the clause gives the Licensor is gone, and B gives a new protection to the licensee. This changes who is bound by what between the parties, and a reader would act on it.",
+      "severity": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0071",
+          "quote": "The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed."
+        },
+        {
+          "doc": "B",
+          "para_id": "p0072",
+          "quote": "You shall not be bound by any additional or different terms or conditions communicated by the Licensor unless expressly agreed."
+        }
+      ]
+    },
+    {
+      "kind": "moved",
+      "title": "Privileges-and-immunities clause moved from Section 8(d) (Interpretation) to Section 7(c) (Other Terms and Conditions)",
+      "description": "In A, the clause saying nothing in the license limits or waives the privileges and immunities of the Licensor or You is item d of Section 8 -- Interpretation. In B the same wording is item c of Section 7 -- Other Terms and Conditions. The wording is unchanged and the clause still applies to the whole license, so the practical effect is small. However, it now sits under a different heading and has a new letter, so any outside citation to 'Section 8(d)' no longer points to it. In B, Section 8 now ends at c with no gap in the lettering.",
+      "severity": "minor",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0077",
+          "quote": "d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0074",
+          "quote": "c. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities"
+        }
+      ]
+    }
+  ],
+  "coverage_note": "Chunk c02 has ops 71-74, all of them in Section 7. Op 71 (EQUAL: Section 7 heading) and op 73 (EQUAL: 7(b) on separate arrangements) were context only and were not judged as changes. Op 72 (MODIFIED) is reported as a critical 'changed' finding because the parties in 7(a) are swapped. Op 74 (MOVED) is reported as a minor 'moved' finding: the clause went from 8(d) to 7(c) and its wording is unchanged. To check op 74, I also read the source files and confirmed that in B, Section 8 is lettered a-c with no gap, so the move leaves no broken lettering. No op in this chunk was dismissed as editorial, and nothing was left unjudged."
+}

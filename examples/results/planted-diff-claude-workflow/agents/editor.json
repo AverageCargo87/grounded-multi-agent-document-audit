@@ -1,0 +1,45 @@
+{
+  "executive_summary": "Version B makes several substantive changes to the public license compared with version A, and two of them are critical. The license grant in Section 2(a)(1) changes from irrevocable to revocable (F003), and the downstream-restrictions clause in Section 2(a)(5)(b) loses the word \"not\", so licensees may now impose extra terms or technological measures on recipients under a heading that still says the opposite (F008). Related inconsistencies with the non-binding preface and with the Adapted Material rules are recorded as lower-confidence follow-ons (F001, F007). The term and termination machinery is also damaged: Section 2(a)(3) now fixes a five-year term that conflicts with the unchanged Section 6(a) (F005, F004), the reinstatement clause points to a Section 9(a) that does not exist (F014), the cure period doubles from 30 to 60 days (F015), and Section 6 drops out of the survival list (F016). On the conditions side, B adds an undefined commercial-use notice requirement of 10 days (F012), deletes the Licensor's right to request removal of attribution and leaves a numbering gap where that item stood (F011, F010), and softens the database attribution duty from must to should (F013, F009). Two drafting changes blur defined terms: Adapted Material is narrowed to translated or altered material (F002), and the media-and-formats grant now uses the undefined term Granted Rights (F006). Section 7(a) swaps the parties so the protection against unagreed terms now runs to the licensee rather than the Licensor (F017). The relocation of the privileges-and-immunities clause from Section 8(d) to Section 7(c) has no effect on meaning and is informational only (F018). Several major findings (F001, F004, F007, F009, F016, F017) were downgraded by the skeptic because parts of their reasoning were overstated, so a reviewer should rely mainly on the core changes they identify.",
+  "themes": [
+    {
+      "title": "License grant revocability and downstream restrictions",
+      "finding_ids": ["F003", "F008", "F001", "F007"]
+    },
+    {
+      "title": "Term, termination, reinstatement and survival",
+      "finding_ids": ["F014", "F005", "F015", "F004", "F016"]
+    },
+    {
+      "title": "Conditions on Sharing and attribution duties",
+      "finding_ids": ["F012", "F011", "F013", "F009", "F010"]
+    },
+    {
+      "title": "Definitions and defined terms",
+      "finding_ids": ["F002", "F006"]
+    },
+    {
+      "title": "Party roles and clause placement in other terms",
+      "finding_ids": ["F017", "F018"]
+    }
+  ],
+  "ordered_finding_ids": [
+    "F003",
+    "F008",
+    "F014",
+    "F005",
+    "F012",
+    "F011",
+    "F015",
+    "F002",
+    "F006",
+    "F013",
+    "F017",
+    "F004",
+    "F016",
+    "F001",
+    "F007",
+    "F009",
+    "F010",
+    "F018"
+  ]
+}

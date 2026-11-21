@@ -1,0 +1,5 @@
+# Keep LF everywhere: document hashes, fixtures and committed results are byte-checked by tests.
+* text=auto eol=lf
+*.png binary
+*.zip binary
+*.pdf binary

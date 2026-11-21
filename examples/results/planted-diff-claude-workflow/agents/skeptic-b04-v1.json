@@ -1,0 +1,64 @@
+{
+  "verdicts": [
+    {
+      "finding_id": "F016",
+      "verdict": "weakened",
+      "reason": "The core change is real: A lists Sections 1, 5, 6, 7 and 8 as surviving termination, B lists only 1, 5, 7 and 8, and no other paragraph of B restores survival of Section 6 (grep for 'surviv' finds only B:p0070). Losing survival of Section 6(b) does undercut post-termination reinstatement, so major severity is fair. However, the description is partly wrong when it says the Licensor's reserved remedies 'no longer survive termination': Section 6(b)'s closing sentence does not create or reserve any remedy, it only clarifies that 6(b) 'does not affect any right the Licensor may have' to seek remedies. Those remedies exist independently of the license text, so dropping Section 6 from the survival list does not remove them. Issue real, explanation overstated; severity kept at major.",
+      "suggested_severity": "keep",
+      "counter_evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0068",
+          "quote": "this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0070",
+          "quote": "Sections 1, 5, 7, and 8 survive termination of this Public License."
+        }
+      ]
+    },
+    {
+      "finding_id": "F017",
+      "verdict": "weakened",
+      "reason": "The party swap is real and is not editorial: A protects the Licensor against terms communicated by You, and B instead protects You against terms communicated by the Licensor. But 'critical' overstates it. The rubric lists a change of 'party' under major, and critical is for grants, prohibitions, termination or liability. In practice the Licensor is still largely protected elsewhere in B: Section 7(b) keeps any arrangement not stated in the license separate from and independent of it, and Section 8(c) still says no term is waived unless the Licensor expressly agrees. Both versions also keep the 'unless expressly agreed' qualifier, which matches the general rule that unilateral terms do not bind without agreement. So the Licensor's practical exposure is limited. Real change; major, not critical.",
+      "suggested_severity": "major",
+      "counter_evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0073",
+          "quote": "Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License."
+        },
+        {
+          "doc": "B",
+          "para_id": "p0078",
+          "quote": "No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor."
+        }
+      ]
+    },
+    {
+      "finding_id": "F018",
+      "verdict": "weakened",
+      "reason": "The move is correctly identified: the privileges-and-immunities sentence is word-for-word identical in A Section 8(d) and B Section 7(c), and A Section 8 is otherwise unchanged as B Section 8(a)-(c), so there is no numbering gap. However, the finding itself says the effect is unchanged, and that is right: both Sections 7 and 8 are still in B's survival list, and moving the clause from 'Interpretation' to 'Other Terms and Conditions' does not change what it means. The only consequence it names is that citations to 'Section 8(d)' would break, but neither A nor B cites Section 8(d) anywhere (a search for internal Section cross-references finds none), so nothing inside the document breaks. This is relocation or renumbering with no change in meaning, which is info at most, not minor.",
+      "suggested_severity": "info",
+      "counter_evidence": [
+        {
+          "doc": "A",
+          "para_id": "p0077",
+          "quote": "d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0074",
+          "quote": "c. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0070",
+          "quote": "Sections 1, 5, 7, and 8 survive termination of this Public License."
+        }
+      ]
+    }
+  ],
+  "missed": []
+}

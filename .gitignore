@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Run directories (agent outputs, absolute paths in workflow_args.json)
+runs/
+
+# Large media and real-run bundles, published as release assets instead
+release-assets/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

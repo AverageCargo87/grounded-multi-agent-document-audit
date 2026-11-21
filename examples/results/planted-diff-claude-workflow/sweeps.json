@@ -1,0 +1,37 @@
+{
+  "findings": [
+    {
+      "kind": "broken_reference",
+      "title": "Cross-reference to a non-existent target: Section 9(a)",
+      "description": "The text refers to Section 9(a), but no Section 9 in this document.",
+      "severity": "major",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0065",
+          "quote": "Section 9(a)"
+        }
+      ]
+    },
+    {
+      "kind": "omission",
+      "title": "Numbering gap: item 3 is missing",
+      "description": "Item 4 follows the item before it, but 3 was expected; an item may have been deleted or the list renumbered incompletely.",
+      "severity": "minor",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "doc": "B",
+          "para_id": "p0050",
+          "quote": "2. You may satisfy the conditions in Section"
+        },
+        {
+          "doc": "B",
+          "para_id": "p0051",
+          "quote": "4. If You Share Adapted Material You produce,"
+        }
+      ]
+    }
+  ]
+}
